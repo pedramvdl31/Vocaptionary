@@ -1,6 +1,7 @@
 # libphonenumber for PHP [![Build Status](https://img.shields.io/travis/giggsey/libphonenumber-for-php.svg?style=flat-square)](https://travis-ci.org/giggsey/libphonenumber-for-php) [![Coverage Status](https://img.shields.io/coveralls/giggsey/libphonenumber-for-php.svg?style=flat-square)](https://coveralls.io/r/giggsey/libphonenumber-for-php?branch=master)
 
-[![Total Downloads](https://img.shields.io/packagist/dt/giggsey/libphonenumber-for-php.svg?style=flat-square)](https://packagist.org/packages/giggsey/libphonenumber-for-php)
+[![Total Downloads](https://poser.pugx.org/giggsey/libphonenumber-for-php/downloads?format=flat-square)](https://packagist.org/packages/giggsey/libphonenumber-for-php)
+[![Downloads per month](https://img.shields.io/packagist/dm/giggsey/libphonenumber-for-php.svg?style=flat-square)](https://packagist.org/packages/giggsey/libphonenumber-for-php)
 [![Latest Stable Version](https://img.shields.io/packagist/v/giggsey/libphonenumber-for-php.svg?style=flat-square)](https://packagist.org/packages/giggsey/libphonenumber-for-php)
 [![License](http://img.shields.io/badge/license-Apache%202.0-red.svg?style=flat-square)](https://packagist.org/packages/giggsey/libphonenumber-for-php)
 
@@ -19,6 +20,8 @@ A PHP library for parsing, formatting, storing and validating international phon
 * `PhoneNumberToCarrierMapper` - provides carrier information related to a phone number.
 
 ## Installation
+
+PHP versions 5.3 up to PHP 7 are currently supported. HHVM is not yet supported.
 
 The PECL [mbstring](http://php.net/mbstring) extension is required.
 
