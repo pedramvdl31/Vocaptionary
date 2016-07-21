@@ -15,20 +15,28 @@ class CreateUsersTable extends Migration
         Schema::create('users', function (Blueprint $table) {
             $table->increments('id');
             $table->string('username');
-            $table->string('first_name');
-            $table->string('last_name');
+            $table->string('description')->nullable();
             $table->string('email')->unique();
+            $table->string('name', 25)->nullable();
+            $table->string('first_name', 25)->nullable();
+            $table->string('last_name', 25)->nullable();
+            $table->string('facebook_id')->nullable();
+            $table->tinyInteger('age')->nullable();
+            $table->string('phone', 20)->nullable();
+            $table->string('country', 3)->nullable();
+            $table->string('city', 50)->nullable();
+            $table->string('street', 125)->nullable();
+            $table->integer('zipcode')->nullable();
+            $table->integer('payment_id')->nullable();
+            $table->string('company', 25)->nullable();
+            $table->tinyInteger('status')->nullable();
+            $table->text('avatar')->nullable();
+            $table->tinyInteger('roles');
             $table->string('password', 60);
-            $table->string('street',200)->nullable();
-            $table->string('city',50)->nullable();
-            $table->string('profile_image', 50)->nullable();
-            $table->string('state', 50)->nullable();
-            $table->string('zipcode', 10)->nullable();
-            $table->string('unit', 10)->nullable();
-            $table->string('api_token', 60)->unique();
-            $table->tinyInteger('role');
+            $table->string('verification_token')->nullable();
             $table->rememberToken();
             $table->timestamps();
+            $table->softDeletes();
         });
     }
 

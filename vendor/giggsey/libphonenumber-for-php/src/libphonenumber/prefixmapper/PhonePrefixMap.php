@@ -2,10 +2,8 @@
 
 namespace libphonenumber\prefixmapper;
 
-
 use libphonenumber\PhoneNumber;
 use libphonenumber\PhoneNumberUtil;
-
 
 /**
  * A utility that maps phone number prefixes to a description string,
@@ -16,11 +14,11 @@ use libphonenumber\PhoneNumberUtil;
  */
 class PhonePrefixMap
 {
-    private $phonePrefixMapStorage = array();
+    protected $phonePrefixMapStorage = array();
     /**
      * @var PhoneNumberUtil
      */
-    private $phoneUtil;
+    protected $phoneUtil;
 
     public function __construct($map)
     {
@@ -60,5 +58,4 @@ class PhonePrefixMap
 
         return null;
     }
-
 }

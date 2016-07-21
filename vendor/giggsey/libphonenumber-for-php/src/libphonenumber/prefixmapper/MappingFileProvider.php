@@ -12,8 +12,7 @@ namespace libphonenumber\prefixmapper;
  */
 class MappingFileProvider
 {
-
-    private $map;
+    protected $map;
 
     public function __construct($map)
     {
@@ -26,6 +25,10 @@ class MappingFileProvider
             return "";
         }
 
+        if ($language === 'zh' && ($region == 'TW' || $region == 'HK' || $region == 'MO')) {
+            $language = 'zh_Hant';
+        }
+
         if ($this->inMap($language, $countryCallingCode)) {
             return $language . DIRECTORY_SEPARATOR . $countryCallingCode . '.php';
         }
@@ -34,9 +37,8 @@ class MappingFileProvider
         return "";
     }
 
-    private function inMap($language, $countryCallingCode)
+    protected function inMap($language, $countryCallingCode)
     {
         return (array_key_exists($language, $this->map) && in_array($countryCallingCode, $this->map[$language]));
     }
-
 }

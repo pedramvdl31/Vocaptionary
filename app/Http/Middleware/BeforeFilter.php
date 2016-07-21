@@ -40,7 +40,6 @@ class BeforeFilter
     {
 
 
-
        // Job::ViewSharesPublicData();
         Job::ViewShareAdminPrivateData();
         // Perform before page load

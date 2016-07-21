@@ -8,7 +8,6 @@ namespace libphonenumber;
  */
 class NumberParseException extends \Exception
 {
-
     const INVALID_COUNTRY_CODE = 0;
     // This generally indicates the string passed in had less than 3 digits in it. More
     // specifically, the number failed to match the regular expression VALID_PHONE_NUMBER in
@@ -24,7 +23,7 @@ class NumberParseException extends \Exception
     // This indicates the string had more digits than any valid phone number could have.
     const TOO_LONG = 4;
 
-    private $errorType;
+    protected $errorType;
 
     public function __construct($errorType, $message, $previous = null)
     {
@@ -45,5 +44,4 @@ class NumberParseException extends \Exception
     {
         return "Error type: " . $this->errorType . ". " . $this->message;
     }
-
 }

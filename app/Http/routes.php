@@ -12,9 +12,13 @@
 */
 
 Route::group(['prefix' => 'api/v1', 'middleware' => 'auth:api'], function () {
-    
 	Route::get('users-all', ['uses' => 'UsersController@getAPIUsersAll']);
+});
 
+Route::group(['middleware' => ['web']], function () {
+	// FACEBOOK PAGE
+	Route::get('auth/facebook', 'Auth\AuthController@redirectToProvider');
+	Route::get('auth/facebook/callback', 'Auth\AuthController@handleProviderCallback');
 });
 
 

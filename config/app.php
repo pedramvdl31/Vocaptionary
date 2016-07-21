@@ -162,8 +162,11 @@ return [
         Collective\Html\HtmlServiceProvider::class,
         Laracasts\Flash\FlashServiceProvider::class,
         Laracasts\Utilities\JavaScript\JavaScriptServiceProvider::class,
+        Laravel\Socialite\SocialiteServiceProvider::class,
         //EXCEL
-        Maatwebsite\Excel\ExcelServiceProvider::class
+        Maatwebsite\Excel\ExcelServiceProvider::class,
+        //CORS
+        Barryvdh\Cors\ServiceProvider::class
 
     ],
 
@@ -215,6 +218,8 @@ return [
         'Input'     => Illuminate\Support\Facades\Input::class,
         'Flash'     => 'Laracasts\Flash\Flash',
         'Excel' => 'Maatwebsite\Excel\Facades\Excel',
+        'Socialite' => Laravel\Socialite\Facades\Socialite::class,
+        'cors' => Barryvdh\Cors\ServiceProvider::class
 
     ],
 
