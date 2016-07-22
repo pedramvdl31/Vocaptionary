@@ -17,16 +17,14 @@ class SUsers extends Seeder
 		        'username' => 'admin',
 		        'email' => 'webmaster@fantaplan.com',
 		        'role' => '1',
-		        'password' => bcrypt('fan4070'),
-		        'api_token' => str_random(60)
+		        'password' => bcrypt('fan4070')
 		    ],
 		    [
 		        'id' => '2',
 		        'username' => 'pedram',
 		        'email' => 'pedram@eyelevate.com',
 		        'role' => '1',
-		        'password' => bcrypt('110110'),
-		        'api_token' => str_random(60)
+		        'password' => bcrypt('110110')
 		    ]
 		 ]);
     }

@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Fantaplan - Admin</title>
 
-<!-- Latest compiled and minified CSS -->
+    <!-- Latest compiled and minified CSS -->
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
   <!-- Font Awesome -->
   <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
@@ -19,7 +19,6 @@
 
     <div class="container">
     	<div class="row-fluid">
-      
 			@yield('content')
 	    </div><!--/row-->
     </div>
