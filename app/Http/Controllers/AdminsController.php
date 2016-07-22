@@ -74,7 +74,6 @@ class AdminsController extends Controller
         Auth::logout();
         Flash::success('You have successfully been logged out');
         return Redirect::action('AdminsController@getLogin');
-    
     }
     public function getViewAcl() {   
         return view('admins.acl_view')

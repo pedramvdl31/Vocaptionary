@@ -19,6 +19,14 @@ $(document).ready(
 			 }, 500,_this);
 		});	
 
+
+		$('#to-play').on("click", function(){
+			window.location.href = "/play";
+		});	
+		$('#to-study').on("click", function(){
+			window.location.href = "/study";
+		});	
+
 	}
 
 );

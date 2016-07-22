@@ -122,7 +122,8 @@ class AuthController extends Controller
         }
         
         Auth::login($authUser, true);
-        return redirect()->route('home_index');
+        return (Session::has('redirect_flash')) ? Redirect::to(Session::get('redirect_flash')) : redirect()->route('home_index');
+
     }
  
     /**

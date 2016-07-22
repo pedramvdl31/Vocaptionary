@@ -55,9 +55,9 @@
 	<div id="page-body" class="profile-page pages">
 		<button type="button" class="btn btn-default btn-lg raised btn-nxt" navigate-to="cards">My Cards
 		</button>
-		<button type="button" class="btn btn-primary btn-lg raised btn-nxt" navigate-to="play">PLAY the Caption Game
+		<button id="to-play" href="{!!route('game_play')!!}" class="btn btn-primary btn-lg raised">PLAY the Caption Game
 		</button>
-		<button type="button" class="btn btn-info btn-lg raised btn-nxt" navigate-to="study">STUDY<Language>
+		<button id="to-study" href="{!!route('game_study')!!}" class="btn btn-info btn-lg raised">STUDY<Language>
 		</button>
 	</div>
 	<style type="text/css">
@@ -273,11 +273,5 @@
 
 
 
- 	<a style="position: absolute;
-	    left: 10px;
-	    top: 10px;
-	    background: transparent;" 
-	    href="#myPanel">
-	    		<i style="color: white;background: transparent;font-size: 27px;" class="glyphicon glyphicon-align-justify"></i>
-    </a>
+
 @stop

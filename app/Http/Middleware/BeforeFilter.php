@@ -46,9 +46,9 @@ class BeforeFilter
         
         $url = ($request->isMethod('post')) ? Session::get('_previous')['url'] : $request->url();
 
-        if (!Request::is('users/login-modal','logout','users/login'))
+        if (!Request::is('users/login-modal','logout','games/logout','users/login'))
         {
-            Session::flash('redirect_flash',$url);
+            Session::put('redirect_flash',$url);
         } 
         //~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
         $response = $next($request);
