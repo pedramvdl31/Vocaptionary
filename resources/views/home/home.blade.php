@@ -8,15 +8,11 @@
 
 @section('content')
 
-
-
-	<div class="container" style="margin: 0;
-	    text-align: center;
-	    width: 100%;
-	    border-radius: 0;">
+	<div class="container">
 		<header>
 			<div class="bio">
-        		<img width="100%" src="http://www.croop.cl/UI/twitter/images/up.jpg" alt="background" class="bg">
+        		<div class="ad-image bg" style="background-image: url('http://www.croop.cl/UI/twitter/images/up.jpg')" alt="background" >
+       			</div>
 				<div class="desc">
 					<h3>@carlf</h3>
 					<p>Carl Fredricksen is the protagonist in Up. He also appeared in Dug's Special Mission as a minor character.</p>

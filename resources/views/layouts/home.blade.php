@@ -28,6 +28,7 @@
 </head>
 <body>
   <style type="text/css">
+
       .ui-panel-display-reveal {
           box-shadow: none !important; 
       }
