@@ -21,7 +21,6 @@
         </div>     
         <div class="col-md-12" style="margin-bottom: 30px">
             <a href="{!! action('AdminsController@getLogin') !!}" class="my-svg-container">
-                <img src="/assets/img/fantalogo.gif" onerror="this.onerror=null; this.src='/assets/img/fantalogo.gif'" alt="..." >
             </a>
         </div>
 
