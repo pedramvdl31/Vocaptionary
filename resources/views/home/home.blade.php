@@ -13,7 +13,7 @@
 			<div class="bio">
         		<style type="text/css">        
 			</style>
-            <div class="ad-image bg" style="background-image: url('http://www.croop.cl/UI/twitter/images/up.jpg');"></div>;
+            <div class="ad-image bg" style="background-image: url('/assets/images/games/up.jpg');"></div>;
 			<div class="desc">
 				<h3>@carlf</h3>
 				<p>Carl Fredricksen is the protagonist in Up. He also appeared in Dug's Special Mission as a minor character.</p>

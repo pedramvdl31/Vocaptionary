@@ -46,7 +46,7 @@ class HomeController extends Controller
         ->with('layout',$this->layout);
     }
     public function getLogoutUser() {
-        // Auth::logout();
+        Auth::logout();
         // // Flash::success('You have successfully been logged out');
         // return Redirect::action('HomeController@home');
         return redirect()->route('home_index');
