@@ -29,7 +29,6 @@ class GamesController extends Controller
     }
 
     public function getPlayIndex() {
-
         return view('games.index')
         ->with('layout',$this->layout_game);
     }
