@@ -1,10 +1,12 @@
 @extends($layout)
 @section('stylesheets')
 	<link rel="stylesheet" href="/packages/jQuery_Circular_Countdown/TimeCircles.css">
+	<link rel="stylesheet" href="/packages/bootstrap-star-rating-master/css/star-rating.css">
 	<link rel="stylesheet" href="/assets/css/games/index.css">
 @stop
 @section('scripts')
 	<script src="/packages/jQuery_Circular_Countdown/TimeCircles.js"></script>
+	<script src="/packages/bootstrap-star-rating-master/js/star-rating.js"></script>
 	<script src="/assets/js/games/index.js"></script>
 @stop
 @section('content')
@@ -23,14 +25,7 @@
 		background-color: white;
 		padding: 0 10px;
 	}
-	#loading-wrapper-wt{
-	  position: absolute;
-	  left: 50%;
-	  top: 33%;
-	  transform: translate(-50%, -50%);
-	  width: 70%;
-	  height: 50%;
-	}
+
 	.my-btn{
 		width: 88px !important;
 	    font-size: 12px !important;
@@ -38,37 +33,76 @@
 	    line-height: 0px !important;
 	    padding: 11px !important;
 	}
+	.inner-div{
+		width: 90%;
+		margin: 0 auto;
+	}
+	.input-arreglo-group{
+    	padding: 0px 0px;
+    	border: none
+	}
+
+	.input-arreglo-right{
+	    margin-top: 0px; 
+	    height: calc(100% + 28px); 
+	    box-shadow: -4px 0px 10px -4px #aaaaaa;
+	    border-radius: 0;
+	}
+
+	.cap-body{
+		padding: 0;
+	}
+	.cap-fg{
+		margin-bottom: 0;
+	}
+	.caption-text{
+		height: 60px;
+	}
+	.rating-container{
+		text-align: left;
+		
+	}
+	.rating,.clear-rating,.caption{
+		font-size: 23px !important;
+	}
+	.heading-name{
+		float: left;
+	}
+	.heading-star{
+		float: right;
+	}
+	.heading-wrapper{
+		line-height: 24px;
+	}
+	/*BELONGS TO RATING*/
+	.caption{
+		display: none !important;
+	}
+	.caption-text{
+		padding: 20px;
+	}
 	</style>
-	<div id="waiting-overlay">
+	<div id="page-overlay-notification">
 		<center id="loading-wrapper-wt"><img class="loading-img" src="/assets/images/icons/gif/loading1.gif">
 			<p>&nbsp;</p>
 			<p>Searching for worthy players.</p>
 			<p>Expected wait is < 2 minutes</p>
 			<p><span id="w-t">00 Seconds</span></p>
-
 			<div id="results-bar-wt">
 				<div id="progress-wrapper-wt" class="progress">
 
 				</div>
 			</div>
-
-
-			<style type="text/css">
-				
-				.textDiv_Seconds{
-				    top: 75px !important;
-				}
-			</style>
-            <div id="CountDownTimer" data-timer="100" style="width: 100px; height: 100px;"></div>
-
-
-
 			<button id="cancel-btn" class="btn btn-defult btn-sm my-btn" rel="external">Cancel</button>
-
 		</center>
 	</div>
 
-	
+
+
+
+
+
+
 	
 	<style type="text/css">
 				/**
@@ -79,16 +113,13 @@
 		    /*margin: 0 auto;*/
 		    text-align: center;
 		}
-
 		.profile-header-img > img.img-circle {
-		    width: calc(100% - 2px);
+		    width: calc(100% - 20px);
 		    border: 2px solid #51D2B7;
 		}
-
 		.profile-header {
 		    margin-top: 43px;
 		}
-
 		/**
 		 * Ranking component
 		 */
@@ -97,11 +128,22 @@
 		    /* z-index: 1000; */
 		    text-align: center;
 		}
-
 		.label.label-default.rank-label {
 		    background-color: rgb(81, 210, 183);
 		    padding: 5px 10px 5px 10px;
 		    border-radius: 27px;
+		}
+		.control-bar{
+			width: 90%;
+    		margin: 0 auto 20px auto;
+		}
+		#cb-btn-holder{
+			line-height: 100px;
+			float: right;
+		}
+		#captions-holder{
+			float: left;
+			width: 100%;
 		}
 	</style>
 
@@ -124,15 +166,18 @@
 			color: #FFD700;
 		}
 		.img-thumbnail{
-		    width: 100% !important;
+		    width: 50% !important;
+    		margin: 0 auto;
+		}
+		#caption-container{
+		    width: 90%;
+		    margin: 0 auto 20px auto;
 		}
 	</style>
 
 	<div id="main_wrap">
 		<div id="profile-images" style="width:100%">
-
-
-			<div class="profile-header-container">   
+			<div class="profile-header-container this-user-profile">   
 	    		<div class="profile-header-img">
 	                <img class="img-circle" src="/assets/images/games/photo.jpg" />
 	                <!-- badge -->
@@ -141,7 +186,7 @@
 	                </div>
 	            </div>
 	        </div> 
-			<div class="profile-header-container">   
+			<div class="profile-header-container other-users-profile">   
 	    		<div class="profile-header-img">
 	                <img class="img-circle" src="/assets/images/games/photo.jpg" />
 	                <!-- badge -->
@@ -150,7 +195,7 @@
 	                </div>
 	            </div>
 	        </div> 
-			<div class="profile-header-container">   
+			<div class="profile-header-container other-users-profile">   
 	    		<div class="profile-header-img">
 	                <img class="img-circle" src="/assets/images/games/photo.jpg" />
 	                <!-- badge -->
@@ -159,7 +204,7 @@
 	                </div>
 	            </div>
 	        </div> 
-			<div class="profile-header-container">   
+			<div class="profile-header-container other-users-profile">   
 	    		<div class="profile-header-img">
 	                <img class="img-circle" src="/assets/images/games/photo.jpg" />
 	                <!-- badge -->
@@ -168,53 +213,60 @@
 	                </div>
 	            </div>
 	        </div> 
-
-
-
-
-
 		</div>
-		<style type="text/css">
-
-			.card-img {
-				float: left;
-				margin-bottom: 10px;
-			  }
-
-		</style>
-
-		<div id="card-images">
-			<h3>Pick one image</h3>
-			<img src = "/assets/images/games/photo.jpg" class = "card-img img-thumbnail">
-			<img src = "/assets/images/games/up.jpg" class = "card-img img-thumbnail">
-			<img src = "/assets/images/games/photo.jpg" class = "card-img img-thumbnail">
-			<img src = "/assets/images/games/up.jpg" class = "card-img img-thumbnail">
-
-		</div>
-
-		<style type="text/css">
-			#results-bar{
-				float: left;
-				width: 100%;
-				background-color: white;
-				padding: 0 10px;
-			}
-			.progress-bar {
-			    -webkit-transition: all;
-			    transition: all;
-			}
-		</style>
-
-		<div id="results-bar">
-			<p>Waiting for votes!</p>
-			<div id="progress-wrapper" class="progress">
-
+		<div id="page-body">
+			<style type="text/css">
+				.card-img {
+					margin-bottom: 10px;
+				  }
+				 .photo-holder{
+				 	width: 100%;
+	    			float: left;
+				 }
+			</style>
+			<div id="card-images">
+				<h3>Pick one image</h3>
+				<div class="photo-holder">
+					<img src = "/assets/images/games/photo.jpg" class = "card-img img-thumbnail">
+				</div>
+				<div class="photo-holder">
+					<img src = "/assets/images/games/up.jpg" class = "card-img img-thumbnail">
+				</div>
+				<div class="photo-holder">
+					<img src = "/assets/images/games/photo.jpg" class = "card-img img-thumbnail">
+				</div>
+				<div class="photo-holder">
+					<img src = "/assets/images/games/up.jpg" class = "card-img img-thumbnail">
+				</div>
 			</div>
+			<style type="text/css">
+				#results-bar{
+				    float: right;
+				    width: calc(100% - 100px);
+				    padding: 0 10px;
+    				line-height: 50px;
+				}
+				.progress-bar {
+				    -webkit-transition: all;
+				    transition: all;
+				}
+				.control-bar-v{
+				    float: left;
+				    width: 100%;
+				}
+
+			</style>
+			<div class="control-bar-v clearfix">
+				<div class="inner-div">
+					<div class="timers" id="VotingTimer" data-timer="10" style="float:left;width: 100px; height: 100px;"></div>
+					<div id="results-bar">
+						<p>Waiting for votes!</p>
+						<div id="progress-wrapper" class="progress">
+
+						</div>
+					</div>	
+				</div>
+			</div>			
 		</div>
-
-
-
 	</div>
-
-
 @stop
