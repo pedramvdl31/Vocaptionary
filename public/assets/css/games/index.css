@@ -1,4 +1,4 @@
-#waiting-overlay{
+#page-overlay-notification{
 	background-color: white;
 	height: 100%;
 	width: 100%;
@@ -16,4 +16,23 @@
 	left: 0;
 	z-index: 1;
 	opacity: 0.95;
+}
+#loading-wrapper-wt{
+    /* position: absolute; */
+    /* left: 50%; */
+    /* top: 30%; */
+    /* margin-top: 46px; */
+    padding-top: 120px;
+    /* transform: translate(-50%, -50%); */
+    width: 70%;
+    height: 50%;
+    margin: 0 auto;
+}
+#loading-wrapper-str{
+	position: absolute;
+	left: 50%;
+	top: 40.5%;
+	/*transform: translate(-50%, -50%);*/
+	width: 70%;
+	height: 50%;
 }
