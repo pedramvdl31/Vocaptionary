@@ -2,22 +2,34 @@
 @section('stylesheets')
 	<link rel="stylesheet" href="/packages/jQuery_Circular_Countdown/TimeCircles.css">
 	<link rel="stylesheet" href="/packages/bootstrap-star-rating-master/css/star-rating.css">
+	<link rel="stylesheet" href="/assets/css/cheat_sheet.css">
 	<link rel="stylesheet" href="/assets/css/games/index.css">
 @stop
 @section('scripts')
 	<script src="/packages/jQuery_Circular_Countdown/TimeCircles.js"></script>
+	<script src="/packages/knob/js/jquery.knob.js"></script>
 	<script src="/packages/bootstrap-star-rating-master/js/star-rating.js"></script>
 	<script src="/assets/js/games/index.js"></script>
 @stop
 @section('content')
 
 	<style type="text/css">
+	.panel-big{
+		border: 6px solid #d6e9c6 !important;
+	}
+	.new-cap{
+		font-size: 20px !important;
+	}
+	#pageone,body{
+		background-color: white !important;
+	}
 	#card-images{
 		margin-top: 40px;
 		text-align: center;
 		float: none;
 		width: 90%;
 		margin: 0 auto;
+		margin-bottom: 35px;
 	}
 	#results-bar-wt{
 		float: left;
@@ -48,15 +60,12 @@
 	    box-shadow: -4px 0px 10px -4px #aaaaaa;
 	    border-radius: 0;
 	}
-
 	.cap-body{
 		padding: 0;
+		overflow: auto;
 	}
 	.cap-fg{
 		margin-bottom: 0;
-	}
-	.caption-text{
-		height: 60px;
 	}
 	.rating-container{
 		text-align: left;
@@ -74,40 +83,30 @@
 	.heading-wrapper{
 		line-height: 24px;
 	}
-	/*BELONGS TO RATING*/
-	.caption{
-		display: none !important;
-	}
 	.caption-text{
-		padding: 20px;
+		height: 60px;
+		text-align: left;
+	    padding: 10px;
+	    word-break: normal;
 	}
 	</style>
-	<div id="page-overlay-notification">
+	<div id="page-overlay-notification" class=" ">
 		<center id="loading-wrapper-wt"><img class="loading-img" src="/assets/images/icons/gif/loading1.gif">
 			<p>&nbsp;</p>
 			<p>Searching for worthy players.</p>
 			<p>Expected wait is < 2 minutes</p>
 			<p><span id="w-t">00 Seconds</span></p>
-			<div id="results-bar-wt">
+			<div id="results-bar-wt" class="hatch">
 				<div id="progress-wrapper-wt" class="progress">
-
 				</div>
 			</div>
-			<button id="cancel-btn" class="btn btn-defult btn-sm my-btn" rel="external">Cancel</button>
+			<button id="cancel-btn" class="btn btn-defult btn-sm my-btn hatch" rel="external">Cancel</button>
 		</center>
 	</div>
-
-
-
-
-
-
-
-	
 	<style type="text/css">
-				/**
-		 * Profile image component
-		 */
+		/**
+			* Profile image component
+		*/
 		.profile-header-container{
 			float: left;
 		    /*margin: 0 auto;*/
@@ -140,6 +139,9 @@
 		#cb-btn-holder{
 			line-height: 100px;
 			float: right;
+		}
+		.left-timer-holder{
+			float: left;
 		}
 		#captions-holder{
 			float: left;
@@ -225,7 +227,7 @@
 				 }
 			</style>
 			<div id="card-images">
-				<h3>Pick one image</h3>
+				<h3 style="text-transform: uppercase;">Pick one image</h3>
 				<div class="photo-holder">
 					<img src = "/assets/images/games/photo.jpg" class = "card-img img-thumbnail">
 				</div>
@@ -258,7 +260,7 @@
 			</style>
 			<div class="control-bar-v clearfix">
 				<div class="inner-div">
-					<div class="timers" id="VotingTimer" data-timer="10" style="float:left;width: 100px; height: 100px;"></div>
+					<input id="VotingTimer" data-role="none" data-width="100" type="text" value="0" data-linecap="round">
 					<div id="results-bar">
 						<p>Waiting for votes!</p>
 						<div id="progress-wrapper" class="progress">
