@@ -260,7 +260,7 @@
 			</style>
 			<div class="control-bar-v clearfix">
 				<div class="inner-div">
-					<input id="VotingTimer" data-role="none" data-width="100" type="text" value="0" data-linecap="round">
+					<input id="VotingTimer" data-role="none" data-width="100" data-height="100" type="text" value="0" data-linecap="round">
 					<div id="results-bar">
 						<p>Waiting for votes!</p>
 						<div id="progress-wrapper" class="progress">

@@ -26,6 +26,74 @@
 <![endif]-->
 </head>
 <body>
+  <style type="text/css">
+    .navigation-bar{
+      border-color: #101010;
+      background-image: -webkit-linear-gradient(#54b4eb, #2fa4e7 60%, #1d9ce5);
+      background-image: -o-linear-gradient(#54b4eb, #2fa4e7 60%, #1d9ce5);
+      background-image: -webkit-gradient(linear, left top, left bottom, from(#54b4eb), color-stop(60%, #2fa4e7), to(#1d9ce5));
+      background-image: linear-gradient(#54b4eb, #2fa4e7 60%, #1d9ce5);
+      background-repeat: no-repeat;
+      filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ff54b4eb', endColorstr='#ff1d9ce5', GradientType=0);
+      border-bottom: 1px solid #178acc;
+      -webkit-filter: none;
+      filter: none;
+      -webkit-box-shadow: 0 1px 10px rgba(0, 0, 0, 0.1);
+      box-shadow: 0 1px 10px rgba(0, 0, 0, 0.1);    
+    }
+  .navbar-fixed-top {
+      top: 0;
+      border-width: 0 0 1px;
+  }
+  @media (min-width: 768px){
+    .navbar-fixed-top, .navbar-fixed-bottom {
+      border-radius: 0;
+    }
+    .navigation-bar {
+        border-radius: 4px;
+    }
+  }
+  .navbar-fixed-top, .navbar-fixed-bottom {
+      position: fixed;
+      right: 0;
+      left: 0;
+      z-index: 1030;
+  }
+  .navigation-bar {
+      position: relative;
+      min-height: 50px;
+      margin-bottom: 20px;
+      border: 1px solid transparent;
+      border-left: 0;
+      border-right: 0;
+  }
+  .nav-btn{
+    margin: 9px 9px 0 0;
+    float: right;
+    height: 30px;
+    width: 100px;
+    
+
+  }
+  </style>
+  <div class="navigation-bar navbar-fixed-top">
+    
+        @if(!Auth::check())
+          <div class="nav-btn-container">
+          <!-- dont remove style -->
+            <a class="btn btn-primary outline nav-btn" href="/auth/facebook" rel="external" style="color: white !important;padding: 3px !important;
+                border: 2px solid white !important;"> 
+              <span class="fa fa-facebook"></span> <span class="facebook-btn-text">Sign in</span>
+            </a>
+          </div>
+        @endif
+
+
+  </div>
+
+
+
+
 
   <div id="main-overlay">
     <center id="loading-wrapper"><img class="loading-img" src="/assets/images/icons/gif/loading1.gif"></center>
@@ -41,22 +109,7 @@
 
       @if(Auth::check())
         <div class="side-btn">
-            <i class="glyphicon glyphicon-home"></i><span class="side-btn-title">Home</span>
-        </div>
-        <div class="side-btn act">
-            <i class="glyphicon glyphicon-home"></i><span class="side-btn-title">Home</span>
-        </div>
-        <div class="side-btn">
-            <i class="glyphicon glyphicon-home"></i><span class="side-btn-title">Home</span>
-        </div>
-        <div class="side-btn">
-            <i class="glyphicon glyphicon-home"></i><span class="side-btn-title">Home</span>
-        </div>
-        <div class="side-btn">
-            <i class="glyphicon glyphicon-home"></i><span class="side-btn-title">Home</span>
-        </div>
-        <div class="side-btn">
-            <i class="glyphicon glyphicon-home"></i><span class="side-btn-title">Home</span>
+            <i class="glyphicon glyphicon-home"></i><span class="side-btn-title"><a href="/" rel="external">Home</a></span>
         </div>
         <div class="side-btn">
             <i class="glyphicon glyphicon-home"></i><span class="side-btn-title"><a href="/home/logout" rel="external">Logout</a></span>
@@ -75,7 +128,7 @@
       <h1>Page Header</h1>
     </div> -->
     <div id="main-container" class="col-md-6 col-sm-12 col-xs-12 text-center">
-      <div id="inner-container" data-role="main" class="ui-content" style="">
+      <div id="inner-container" data-role="main" class="ui-content" style="    padding: 60px 10px 10px 10px;">
         @yield('content')
       </div>
     </div>
@@ -83,19 +136,17 @@
       <h1>Page Footer</h1>
     </div> -->
   </div>
-
-
   <a style="position: absolute;
-      left: 10px;
-      top: 10px;
-      background: transparent;
-      z-index: 9999;" 
-      href="#myPanel">
-          <i style="color: white;background: transparent;font-size: 27px;" class="glyphicon glyphicon-align-justify"></i>
-    </a>
-  
+    left: 10px;
+    top: 10px;
+    background: transparent;
+    z-index: 9999;" 
+    href="#myPanel">
+        <i style="color: white;background: transparent;font-size: 27px;" class="glyphicon glyphicon-align-justify"></i>
+  </a>
 </body>
 <script src="/assets/plugins/jQuery/jQuery-2.1.4.min.js"></script>
+<script src="/packages/bootstrap-3.3.7-dist/js/bootstrap.min.js"></script>
 <script src="/assets/plugins/jQuery_mobile/jquery.mobile-1.4.5.min.js"></script>
 <script src="/assets/js/layouts/home.js"></script>
 @yield('scripts')

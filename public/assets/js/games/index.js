@@ -193,7 +193,7 @@ function prepare_game_window(){
 							'</div>'+
 							'<div class="control-bar clearfix">'+
 								'<div class="left-timer-holder">'+
-									'<input id="WriteCaptionTimer" data-role="none" data-width="100" type="text" value="0" data-linecap="round">'+
+									'<input id="WriteCaptionTimer" data-role="none" data-height="100" data-width="100" type="text" value="0" data-linecap="round">'+
 								'</div>'+
 								'<div id="cb-btn-holder">'+
 									'<button id="sbmt-caption" class="btn btn-primary btn-sm">Submit</button>'+
@@ -312,7 +312,7 @@ function ViewCaptionResultPage(){
 			'<div class="control-bar-v ">'+
 				'<div class="inner-div clearfix">'+
 				'<div class="left-timer-holder">'+
-					'<input id="RankingTimer" data-role="none" data-width="100" type="text" value="0" data-linecap="round">'+
+					'<input id="RankingTimer" data-role="none" data-height="100" data-width="100" type="text" value="0" data-linecap="round">'+
 				'</div>'+					
 				'<div id="cb-btn-holder"><button id="see-results" class="btn btn-primary btn-sm">View Result</button></div>'+
 				'</div>'+

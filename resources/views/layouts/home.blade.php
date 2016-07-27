@@ -26,7 +26,14 @@
 <![endif]-->
 </head>
 <body>
-
+<style type="text/css">
+  pre{
+        z-index: 999999999999999;
+    margin-top: 100px;
+    position: relative;
+    background: black;
+  }
+</style>
   <div id="main-overlay">
     <center id="loading-wrapper"><img class="loading-img" src="/assets/images/icons/gif/loading1.gif"></center>
   </div>
@@ -41,23 +48,10 @@
 
       @if(Auth::check())
         <div class="side-btn">
-            <i class="glyphicon glyphicon-home"></i><span class="side-btn-title">Home</span>
+            <i class="glyphicon glyphicon-home"></i><span class="side-btn-title"><a href="/">Home</a></span>
         </div>
-        <div class="side-btn act">
-            <i class="glyphicon glyphicon-home"></i><span class="side-btn-title">Home</span>
-        </div>
-        <div class="side-btn">
-            <i class="glyphicon glyphicon-home"></i><span class="side-btn-title">Home</span>
-        </div>
-        <div class="side-btn">
-            <i class="glyphicon glyphicon-home"></i><span class="side-btn-title">Home</span>
-        </div>
-        <div class="side-btn">
-            <i class="glyphicon glyphicon-home"></i><span class="side-btn-title">Home</span>
-        </div>
-        <div class="side-btn">
-            <i class="glyphicon glyphicon-home"></i><span class="side-btn-title">Home</span>
-        </div>
+
+
         <div class="side-btn">
             <i class="glyphicon glyphicon-home"></i><span class="side-btn-title"><a href="/home/logout" rel="external">Logout</a></span>
         </div>
@@ -96,6 +90,7 @@
   
 </body>
 <script src="/assets/plugins/jQuery/jQuery-2.1.4.min.js"></script>
+
 <script src="/assets/plugins/jQuery_mobile/jquery.mobile-1.4.5.min.js"></script>
 <script src="/assets/js/layouts/home.js"></script>
 @yield('scripts')

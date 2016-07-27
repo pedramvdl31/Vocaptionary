@@ -27,6 +27,9 @@
 </head>
 <body>
   <style type="text/css">
+    #pageone{
+
+    }
     .navigation-bar{
       border-color: #101010;
       background-image: -webkit-linear-gradient(#54b4eb, #2fa4e7 60%, #1d9ce5);
@@ -109,22 +112,7 @@
 
       @if(Auth::check())
         <div class="side-btn">
-            <i class="glyphicon glyphicon-home"></i><span class="side-btn-title">Home</span>
-        </div>
-        <div class="side-btn act">
-            <i class="glyphicon glyphicon-home"></i><span class="side-btn-title">Home</span>
-        </div>
-        <div class="side-btn">
-            <i class="glyphicon glyphicon-home"></i><span class="side-btn-title">Home</span>
-        </div>
-        <div class="side-btn">
-            <i class="glyphicon glyphicon-home"></i><span class="side-btn-title">Home</span>
-        </div>
-        <div class="side-btn">
-            <i class="glyphicon glyphicon-home"></i><span class="side-btn-title">Home</span>
-        </div>
-        <div class="side-btn">
-            <i class="glyphicon glyphicon-home"></i><span class="side-btn-title">Home</span>
+            <i class="glyphicon glyphicon-home"></i><span class="side-btn-title"><a href="/">Home</a></span>
         </div>
         <div class="side-btn">
             <i class="glyphicon glyphicon-home"></i><span class="side-btn-title"><a href="/home/logout" rel="external">Logout</a></span>
@@ -151,14 +139,14 @@
       <h1>Page Footer</h1>
     </div> -->
   </div>
-  <a style="position: absolute;
+<!--   <a style="position: absolute;
     left: 10px;
     top: 10px;
     background: transparent;
     z-index: 9999;" 
     href="#myPanel">
         <i style="color: white;background: transparent;font-size: 27px;" class="glyphicon glyphicon-align-justify"></i>
-  </a>
+  </a> -->
 </body>
 <script src="/assets/plugins/jQuery/jQuery-2.1.4.min.js"></script>
 <script src="/assets/plugins/jQuery_mobile/jquery.mobile-1.4.5.min.js"></script>

@@ -8,7 +8,10 @@ main = {
         if (location.hash == "#_=_") {
             removeHash();
         }
-
+        $(document).bind('pagechange', function() {
+          $('.ui-page-active .ui-listview').listview('refresh');
+          $('.ui-page-active :jqmData(role=content)').trigger('create');
+        });
         // loading-wrapper
         jQuery(window).load(function () {
             $('#main-overlay').fadeOut('slow');
