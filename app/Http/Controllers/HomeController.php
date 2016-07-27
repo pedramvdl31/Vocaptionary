@@ -42,8 +42,13 @@ class HomeController extends Controller
      */
     public function home()
     {
+
         return view('home.home')
         ->with('layout',$this->layout);
+    }
+    public function getTest()
+    {
+        Job::dump('here');
     }
     public function getLogoutUser() {
         Auth::logout();

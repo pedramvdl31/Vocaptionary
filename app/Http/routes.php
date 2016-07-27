@@ -10,6 +10,21 @@
 | and give it the controller to call when that URI is requested.
 |
 */
+// Sample route, with a "before" filter called "domain_access"
+// Route::group(['middleware' => ['web'],'domain' => '{account}.vocaptionary.app'], function () {
+// 	Route::any( '{slug}', function($account){
+// 		echo $account;
+// 		Route::get('test',['middleware' => ['beforeFilter:tet'], function ($account) {
+// 	    	return Redirect::action('AdminsController@getLogin');
+// 	    }]);
+// 	});
+// 	// Route::any('', function($account){
+// 	//     Route::get('/test', function ($account) {
+// 	//     	echo $account;
+// 	//     });
+// 	// });
+// });
+
 
 Route::group(['middleware' => ['web','beforeFilter']], function () {
 	//HOME ROUTE

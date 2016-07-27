@@ -19,6 +19,7 @@ use App\Http\Requests;
 use App\Http\Controllers\Controller;
 use App\Job;
 use App\User;
+use Config;
 
 
 class GamesController extends Controller
@@ -34,7 +35,6 @@ class GamesController extends Controller
     }
 
     public function getStudyIndex() {
-
         return view('studies.index')
         ->with('layout',$this->layout_study);
     }
