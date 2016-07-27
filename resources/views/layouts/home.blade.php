@@ -28,7 +28,7 @@
 <body>
 <style type="text/css">
   pre{
-        z-index: 999999999999999;
+    z-index: 999999999999999;
     margin-top: 100px;
     position: relative;
     background: black;
@@ -90,7 +90,7 @@
   
 </body>
 <script src="/assets/plugins/jQuery/jQuery-2.1.4.min.js"></script>
-
+<script src="/packages/bootstrap-3.3.7-dist/js/bootstrap.min.js"></script>
 <script src="/assets/plugins/jQuery_mobile/jquery.mobile-1.4.5.min.js"></script>
 <script src="/assets/js/layouts/home.js"></script>
 @yield('scripts')
