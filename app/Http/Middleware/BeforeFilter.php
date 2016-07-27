@@ -36,9 +36,8 @@ class BeforeFilter
      * @param  \Closure  $next
      * @return mixed
      */
-    public function handle($request, Closure $next,$account)
+    public function handle($request, Closure $next)
     {
-        Job::dump('ere');
 
        // Job::ViewSharesPublicData();
         Job::ViewShareAdminPrivateData();
