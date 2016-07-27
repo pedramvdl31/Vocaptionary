@@ -52,11 +52,67 @@
 			<!--<p>Click on the button below to open the Panel.</p>
 		  <a  id="open-sidemenu" href="#myPanel" class="ui-btn ui-btn-inline ui-corner-all ui-shadow">Open Panel</a> -->
 	</div>
+	<style type="text/css">
+	    .emoticon {
+		    width: 29px;
+    		height: 19px;
+            display: inline-block;
+            vertical-align: top;
+        }
+		.flag-us {
+            background-image: url(/assets/images/flag-icons-border.png);
+            background-repeat: no-repeat;
+            background-size: 600px;
+            background-position: -435px -497px;
+        }
+
+        .btn-flag-wrapper {
+        	position: relative;
+        }
+        .flag-wrapper{
+        	position: absolute;
+		    top: 22px;
+		    right: 20px;
+		    width: 30px;
+        }
+        .more-flags{
+		    width: 44px;
+		    left: -7px;
+		    top: 2px;
+		    /* margin-top: 2px; */
+		    padding: 4px;
+		    padding-bottom: 6px;
+		    z-index: 9999999;
+		    position: relative;
+		    background: gainsboro;
+        }
+	</style>
 	<div id="page-body" class="profile-page pages">
-		<button type="button" class="btn btn-default btn-lg raised btn-nxt" navigate-to="cards">My Cards
-		</button>
-		<button id="to-play" href="{!!route('game_play')!!}" class="btn btn-primary btn-lg raised">PLAY the Caption Game
-		</button>
+
+		<div class="btn-flag-wrapper">
+			<button type="button" class="btn btn-default btn-lg raised btn-nxt" navigate-to="cards">My Cards&nbsp;
+			</button>
+			<div class="flag-wrapper">
+				<i tab="1" txt="blaugh" class="ec emoticon flag-us"></i>
+				<div class="more-flags hide">
+					<i tab="1" txt="blaugh" class="ec emoticon flag-us"></i>
+					<i tab="1" txt="blaugh" class="ec emoticon flag-us"></i>
+				</div>
+			</div>		
+		</div>
+
+		<div class="btn-flag-wrapper">
+			<button id="to-play" href="{!!route('game_play')!!}" class="btn btn-primary btn-lg raised">PLAY the Caption Game
+			</button>
+			<div class="flag-wrapper">
+				<i tab="1" txt="blaugh" class="ec emoticon flag-us"></i>
+				<div class="more-flags hide">
+					<i tab="1" txt="blaugh" class="ec emoticon flag-us"></i>
+					<i tab="1" txt="blaugh" class="ec emoticon flag-us"></i>
+				</div>
+			</div>	
+		</div>
+
 		<button id="to-study" href="{!!route('game_study')!!}" class="btn btn-info btn-lg raised">STUDY<Language>
 		</button>
 	</div>
@@ -270,7 +326,8 @@
 		</dl>
 	</div>
 
-
+<div data-role="none" class="bfh-selectbox bfh-languages" data-language="en_US" data-available="en_US,fr_CA,es_MX" data-flags="true">
+</div>
 
 
 

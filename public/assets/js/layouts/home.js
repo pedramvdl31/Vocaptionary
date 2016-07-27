@@ -1,7 +1,6 @@
 $(document).ready(function(){
 	main.pageLoad();
 	main.events();
-
 });
 main = {
 	pageLoad: function() {
@@ -31,6 +30,17 @@ main = {
 	},
 	events: function() {
 
+
+        $('.flag-wrapper').on("click", function(){
+            $('.flag-wrapper').removeClass('act-btn');
+            $('.more-flags').addClass('hide');
+            if ($(this).hasClass('act-btn')) {
+
+            } else {
+                $(this).addClass('act-btn');
+                $(this).find('.more-flags:first').removeClass('hide');
+            }
+        }); 
 	}
 }
 request = {
