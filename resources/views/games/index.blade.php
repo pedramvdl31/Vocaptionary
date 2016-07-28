@@ -14,6 +14,28 @@
 @section('content')
 
 	<style type="text/css">
+	#rating-wrapper{
+		float: left;
+	    width: 100%;
+	    margin: 0;
+	    padding: 0;
+	    margin-top: 10px;
+	}
+	.control-bar-v{
+		margin-top: 10px;
+	    float: left;
+	    width: 100%;
+	}
+	.control-bar-vr{
+		margin:10px 0 10px 0;
+	    float: left;
+	    width: 100%;
+	    padding: 0 15px;
+	}
+	#main_wrap{
+		float: left;
+    	padding-top: 59px;
+	}
 	.panel-big{
 		border: 6px solid #d6e9c6 !important;
 	}
@@ -24,12 +46,21 @@
 		background-color: white !important;
 	}
 	#card-images{
+		margin-top: 10px !important;
+	    text-align: center;
+	    float: left;
+	    width: 100%;
+	    padding: 15px;
+	    background: #9e9e9e;
+	}
+	#card-image-holder{
 		margin-top: 40px;
-		text-align: center;
-		float: none;
-		width: 90%;
-		margin: 0 auto;
-		margin-bottom: 35px;
+	    text-align: center;
+	    float: left;
+	    width: 100%;
+	    padding: 15px;
+	    background: #9e9e9e;
+	    margin-top: 10px;
 	}
 	#results-bar-wt{
 		float: left;
@@ -46,8 +77,10 @@
 	    padding: 11px !important;
 	}
 	.inner-div{
-		width: 90%;
-		margin: 0 auto;
+		width: 100%;
+	    /* margin: 0 auto; */
+	    float: left;
+	    padding: 0 15px;
 	}
 	.input-arreglo-group{
     	padding: 0px 0px;
@@ -89,6 +122,8 @@
 	    padding: 10px;
 	    word-break: normal;
 	}
+
+}
 	</style>
 	<div id="page-overlay-notification" class=" ">
 		<center id="loading-wrapper-wt"><img class="loading-img" src="/assets/images/icons/gif/loading1.gif">
@@ -112,10 +147,7 @@
 		    /*margin: 0 auto;*/
 		    text-align: center;
 		}
-		.profile-header-img > img.img-circle {
-		    width: calc(100% - 20px);
-		    border: 2px solid #51D2B7;
-		}
+
 		.profile-header {
 		    margin-top: 43px;
 		}
@@ -128,7 +160,7 @@
 		    text-align: center;
 		}
 		.label.label-default.rank-label {
-		    background-color: rgb(81, 210, 183);
+		    background-color: rgb(54, 167, 232);
 		    padding: 5px 10px 5px 10px;
 		    border-radius: 27px;
 		}
@@ -137,8 +169,9 @@
     		margin: 0 auto 20px auto;
 		}
 		#cb-btn-holder{
-			line-height: 100px;
-			float: right;
+			float: left;
+			width: 100%;
+			margin: 10px 0 0 0;
 		}
 		.left-timer-holder{
 			float: left;
@@ -147,18 +180,44 @@
 			float: left;
 			width: 100%;
 		}
+		.profile-header-img > img.img-circle {
+		    border: 2px solid #40abe8;
+		}
+	    /* Large Devices, Wide Screens */
+	    @media only screen and (max-width : 1200px) {
+
+	    }
+	    /* Medium Devices, Desktops */
+	    @media only screen and (max-width : 992px) {
+
+	    }
+	    /* Small Devices, Tablets */
+	    @media only screen and (max-width : 768px) {
+	    	.profile-header-img > img.img-circle {
+			    width: calc(58% - 0px);
+			}  
+	    }
+	    /* Extra Small Devices, Phones */ 
+	    @media only screen and (max-width : 480px) {
+	    	.profile-header-img > img.img-circle {
+			    width: calc(68% - 0px);
+			}  
+	    }
+	    /* Custom, iPhone Retina */ 
+	    @media only screen and (max-width : 320px) {
+		    .profile-header-img > img.img-circle {
+			    width: calc(100% - 2px);
+			}   
+	    }
 	</style>
 
 
 	<style type="text/css">
-		#profile-images{
-			float: left;
-			margin-bottom: 35px;
-		}
 		.profile-header-container{
 			width: 25%;
 		}
 		.profile-header-img {
+			margin-bottom: 6px;
 		    padding-top: 54px;
 		}
 		.rank-label{
@@ -168,107 +227,173 @@
 			color: #FFD700;
 		}
 		.img-thumbnail{
-		    width: 50% !important;
+		    width: 25% !important;
     		margin: 0 auto;
 		}
 		#caption-container{
-		    width: 90%;
-		    margin: 0 auto 20px auto;
+		    width: 100%;
+		    margin: 10px auto 0 auto;
+		    float: left;
+		    padding: 0 10px;
 		}
+		#profile-images{
+			width: 100%;
+    		overflow: hidden;
+			float: left;
+			height: 158px;     
+		}
+		.p-image-wrap{
+		    position: relative;
+		    float: left;
+		    width: 25%;
+		    height: 100%;
+		    padding: 0;
+		    /* border: 1px solid #3ba9e8; */
+		    /* border-radius: 12px; */
+		    padding: 3px;
+		    overflow: hidden;			
+		}
+		.p-image{    
+		    float: left;
+		    width: 100%;
+		    /* margin: 10px; */
+		    border: 1px solid #3ba9e8;
+		    border-radius: 10px;
+		    overflow: hidden;
+		}
+		.fit-image-wrapper{
+			float: left;
+            height: 100px;
+    		width: 100%;
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: 50% 50%;
+		}
+		.p-name{
+			float: left;
+			height: 20px;
+			width: 100%;
+			line-height: 20px;
+			background: #9e9e9e;
+			color: white;
+		}
+		.p-caption{
+			color: white;
+			line-height: 30px;
+			width: 100%;
+		    float: left;
+		    height: 30px;
+		    background: #9e9e9e;
+		    position: relative;
+		}
+		#page-body{
+			float: left;
+		    width: 100%;
+		    margin: 0;
+		    padding: 0;
+		}
+		#results-bar{
+		    float: right;
+		    width: calc(100% - 100px);
+		    padding: 38px 10px 0 10px;
+		}
+		.progress-bar {
+		    -webkit-transition: all;
+		    transition: all;
+		}
+
+		 .photo-holder{
+		 	width: 100%;
+			float: left;
+		 }
+		 #mygallery{
+		 	width: 100%;
+		 }
+		 .images-wrapp{
+		 	width: 25%;
+		 	float: left;
+		 }
+		 .images-wrapp>img{
+		 	width: 100%;
+		 }
+		 .timer-wrap{
+		 	float: left;
+		 }
+		 .inner-div{
+
+		 }
+		 #vote-text{
+		 	float: left;
+		 	width: 100%;
+		 	margin-top: 10px;
+		 }
 	</style>
 
 	<div id="main_wrap">
 		<div id="profile-images" style="width:100%">
-			<div class="profile-header-container this-user-profile">   
-	    		<div class="profile-header-img">
-	                <img class="img-circle" src="/assets/images/games/photo.jpg" />
-	                <!-- badge -->
-	                <div class="rank-label-container">
-	                    <span class="label label-default rank-label">100 <i class="glyphicon glyphicon-star star-i"></i></span>
-	                </div>
-	            </div>
-	        </div> 
-			<div class="profile-header-container other-users-profile">   
-	    		<div class="profile-header-img">
-	                <img class="img-circle" src="/assets/images/games/photo.jpg" />
-	                <!-- badge -->
-	                <div class="rank-label-container">
-	                    <span class="label label-default rank-label">421 <i class="glyphicon glyphicon-star star-i"></i></span>
-	                </div>
-	            </div>
-	        </div> 
-			<div class="profile-header-container other-users-profile">   
-	    		<div class="profile-header-img">
-	                <img class="img-circle" src="/assets/images/games/photo.jpg" />
-	                <!-- badge -->
-	                <div class="rank-label-container">
-	                    <span class="label label-default rank-label">24 <i class="glyphicon glyphicon-star star-i"></i></span>
-	                </div>
-	            </div>
-	        </div> 
-			<div class="profile-header-container other-users-profile">   
-	    		<div class="profile-header-img">
-	                <img class="img-circle" src="/assets/images/games/photo.jpg" />
-	                <!-- badge -->
-	                <div class="rank-label-container">
-	                    <span class="label label-default rank-label">986 <i class="glyphicon glyphicon-star star-i"></i></span>
-	                </div>
-	            </div>
-	        </div> 
+			<div class="p-image-wrap">
+				<div class="p-image">
+					<div class="p-name"><span>Cooper</span></div>
+					<div class="fit-image-wrapper" style="background-image: url('/assets/images/games/photo.jpg')"></div>
+					<div class="p-caption">100 <i class="glyphicon glyphicon-star"></i></div>
+				</div>				
+			</div>
+			<div class="p-image-wrap">
+				<div class="p-image">
+					<div class="p-name"><span>Cooper</span></div>
+					<div class="fit-image-wrapper" style="background-image: url('/assets/images/games/photo.jpg')"></div>
+					<div class="p-caption">100 <i class="glyphicon glyphicon-star"></i></div>
+				</div>				
+			</div>
+			<div class="p-image-wrap">
+				<div class="p-image">
+					<div class="p-name"><span>Cooper</span></div>
+					<div class="fit-image-wrapper" style="background-image: url('/assets/images/games/photo.jpg')"></div>
+					<div class="p-caption">100 <i class="glyphicon glyphicon-star"></i></div>
+				</div>				
+			</div>
+			<div class="p-image-wrap">
+				<div class="p-image">
+					<div class="p-name"><span>Cooper</span></div>
+					<div class="fit-image-wrapper" style="background-image: url('/assets/images/games/photo.jpg')"></div>
+					<div class="p-caption">100 <i class="glyphicon glyphicon-star"></i></div>
+				</div>				
+			</div>
+
+
 		</div>
 		<div id="page-body">
-			<style type="text/css">
-				.card-img {
-					margin-bottom: 10px;
-				  }
-				 .photo-holder{
-				 	width: 100%;
-	    			float: left;
-				 }
-			</style>
-			<div id="card-images">
-				<h3 style="text-transform: uppercase;">Pick one image</h3>
-				<div class="photo-holder">
-					<img src = "/assets/images/games/photo.jpg" class = "card-img img-thumbnail">
-				</div>
-				<div class="photo-holder">
-					<img src = "/assets/images/games/up.jpg" class = "card-img img-thumbnail">
-				</div>
-				<div class="photo-holder">
-					<img src = "/assets/images/games/photo.jpg" class = "card-img img-thumbnail">
-				</div>
-				<div class="photo-holder">
-					<img src = "/assets/images/games/up.jpg" class = "card-img img-thumbnail">
-				</div>
-			</div>
-			<style type="text/css">
-				#results-bar{
-				    float: right;
-				    width: calc(100% - 100px);
-				    padding: 0 10px;
-    				line-height: 50px;
-				}
-				.progress-bar {
-				    -webkit-transition: all;
-				    transition: all;
-				}
-				.control-bar-v{
-				    float: left;
-				    width: 100%;
-				}
-
-			</style>
 			<div class="control-bar-v clearfix">
 				<div class="inner-div">
-					<input id="VotingTimer" data-role="none" data-width="100" data-height="100" type="text" value="0" data-linecap="round">
+					<div class="timer-wrap">
+						<input id="VotingTimer" data-role="none" data-width="100" data-height="100" type="text" value="0" data-linecap="round">		
+					</div>
 					<div id="results-bar">
-						<p>Waiting for votes!</p>
 						<div id="progress-wrapper" class="progress">
 
 						</div>
 					</div>	
 				</div>
-			</div>			
+			</div>
+			<div id="vote-text">
+				<h3 style="text-transform: uppercase;margin: 0;">Vote for an image...</h3>
+			</div>
+			<div id="card-images">
+				<div id="mygallery" >
+					<div class="images-wrapp card-img">
+				    	<img alt="Title 1" src="/assets/images/games/test1.jpg"/>
+					</div>
+					<div class="images-wrapp card-img">
+				    	<img alt="Title 1" src="/assets/images/games/test2.jpg"/>
+					</div>
+					<div class="images-wrapp card-img">
+						<img alt="Title 1" src="/assets/images/games/test4.gif"/>
+					</div>
+					<div class="images-wrapp card-img">
+						<img alt="Title 2" src="/assets/images/games/test6.png"/>
+					</div>
+				</div>
+			</div>
 		</div>
 	</div>
 @stop

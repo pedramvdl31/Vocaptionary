@@ -20,10 +20,10 @@
   {!! Html::style('/assets/css/general_styling/gs_1.css')!!}
   @yield('stylesheets')
 
-<!--[if lt IE 9]>
-<script src="http://css3-mediaqueries-js.googlecode.com/files/css3-mediaqueries.js"></script>
-<script src="http://Html5shim.googlecode.com/svn/trunk/Html5.js"></script>
-<![endif]-->
+  <!--[if lt IE 9]>
+  <script src="http://css3-mediaqueries-js.googlecode.com/files/css3-mediaqueries.js"></script>
+  <script src="http://Html5shim.googlecode.com/svn/trunk/Html5.js"></script>
+  <![endif]-->
 </head>
 <body>
   <style type="text/css">
@@ -75,8 +75,6 @@
     float: right;
     height: 30px;
     width: 100px;
-    
-
   }
   </style>
   <div class="navigation-bar navbar-fixed-top">
@@ -90,18 +88,9 @@
             </a>
           </div>
         @endif
-
-
   </div>
-
-
-
-
-
-  <div id="main-overlay">
-    <center id="loading-wrapper"><img class="loading-img" src="/assets/images/icons/gif/loading1.gif"></center>
+    <div id="main-overlay">
   </div>
-
   <div data-role="page" id="pageone">
     <div data-role="panel" id="myPanel" data-display="overlay">
       <div class="side-jumbotron">
@@ -139,17 +128,16 @@
       <h1>Page Footer</h1>
     </div> -->
   </div>
-<!--   <a style="position: absolute;
+  <a style="position: absolute;
     left: 10px;
     top: 10px;
     background: transparent;
     z-index: 9999;" 
     href="#myPanel">
         <i style="color: white;background: transparent;font-size: 27px;" class="glyphicon glyphicon-align-justify"></i>
-  </a> -->
+  </a>
 </body>
 <script src="/assets/plugins/jQuery/jQuery-2.1.4.min.js"></script>
 <script src="/assets/plugins/jQuery_mobile/jquery.mobile-1.4.5.min.js"></script>
-<script src="/assets/js/layouts/home.js"></script>
 @yield('scripts')
 </html>
