@@ -68,6 +68,11 @@
 <!--     <div data-role="header">
       <h1>Page Header</h1>
     </div> -->
+    <style type="text/css">
+      #inner-container{
+        overflow: visible;
+      }
+    </style>
     <div id="main-container" class="col-md-6 col-sm-12 col-xs-12 text-center">
       <div id="inner-container" data-role="main" class="ui-content" style="">
         @yield('content')

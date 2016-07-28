@@ -71,8 +71,8 @@
         }
         .flag-wrapper{
         	position: absolute;
-		    top: 22px;
-		    right: 20px;
+		    top: 11px;
+		    right: 69px;
 		    width: 30px;
         }
         .more-flags{
@@ -86,35 +86,62 @@
 		    position: relative;
 		    background: gainsboro;
         }
+        .fbtn{
+        	height: 33px;
+		    width: 53px;
+		    padding: 7px;
+        }
+        .flag-dropdown {
+		    text-align: right !important;
+		    width: 100% !important;
+		    min-width: 20px !important;
+		    padding-top: 0;
+		}
+		.flag-dropdown li{
+			width: 40px;
+			margin-top: 4px;
+		}
+		#page-body{
+			overflow: visible;
+		}
 	</style>
 	<div id="page-body" class="profile-page pages">
 
-		<div class="btn-flag-wrapper">
-			<button type="button" class="btn btn-default btn-lg raised btn-nxt" navigate-to="cards">My Cards&nbsp;
-			</button>
-			<div class="flag-wrapper">
-				<i tab="1" txt="blaugh" class="ec emoticon flag-us"></i>
-				<div class="more-flags hide">
-					<i tab="1" txt="blaugh" class="ec emoticon flag-us"></i>
-					<i tab="1" txt="blaugh" class="ec emoticon flag-us"></i>
-				</div>
-			</div>		
-		</div>
-
+		<button type="button" class="btn btn-default btn-lg raised btn-nxt" navigate-to="cards">My Cards&nbsp;
+		</button>
 		<div class="btn-flag-wrapper">
 			<button id="to-play" href="{!!route('game_play')!!}" class="btn btn-primary btn-lg raised">PLAY the Caption Game
 			</button>
 			<div class="flag-wrapper">
-				<i tab="1" txt="blaugh" class="ec emoticon flag-us"></i>
-				<div class="more-flags hide">
-					<i tab="1" txt="blaugh" class="ec emoticon flag-us"></i>
-					<i tab="1" txt="blaugh" class="ec emoticon flag-us"></i>
+				<div class="btn-group">
+				  <button type="button" class="btn btn-default dropdown-toggle btn-xs fbtn" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+				  	<i tab="1" txt="blaugh" class="ec emoticon flag-us"></i>
+				  <span class="caret"></span>
+				  </button>
+				  <ul class="dropdown-menu flag-dropdown">
+				    <li class="li1"><i tab="1" txt="blaugh" class="ec emoticon flag-us"></i></li>
+				    <li class="li1"><i tab="1" txt="blaugh" class="ec emoticon flag-us"></i></li>
+				    <li class="li1"><i tab="1" txt="blaugh" class="ec emoticon flag-us"></i></li>
+				  </ul>
 				</div>
 			</div>	
 		</div>
-
-		<button id="to-study" href="{!!route('game_study')!!}" class="btn btn-info btn-lg raised">STUDY<Language>
-		</button>
+		<div class="btn-flag-wrapper">
+			<button id="to-study" href="{!!route('game_study')!!}" class="btn btn-info btn-lg raised">STUDY Language</button>
+			<div class="flag-wrapper">
+				<div class="btn-group">
+				  <button type="button" class="btn btn-default dropdown-toggle btn-xs fbtn" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+				  	<i tab="1" txt="blaugh" class="ec emoticon flag-us"></i>
+				  <span class="caret"></span>
+				  </button>
+				  <ul class="dropdown-menu flag-dropdown">
+				    <li class="li1"><i tab="1" txt="blaugh" class="ec emoticon flag-us"></i></li>
+				    <li class="li1"><i tab="1" txt="blaugh" class="ec emoticon flag-us"></i></li>
+				    <li class="li1"><i tab="1" txt="blaugh" class="ec emoticon flag-us"></i></li>
+				  </ul>
+				</div>
+			</div>
+		</div>
 	</div>
 	<style type="text/css">
 		.card-image{
