@@ -82,12 +82,6 @@ Route::group(['middleware' => ['web','beforeFilter']], function () {
 
 	/** ADMINS ACL GROUP **/
 	Route::group(['middleware' => ['auth']], function(){
-
-
-
-
-
-
 		Route::get('admins',  ['as'=>'admins_index', 'uses' => 'AdminsController@getIndex', 'middleware' => ['acl:admins']]);
 		Route::group(['prefix' => 'admins'], function () {
 			$prefix = 'admins';	

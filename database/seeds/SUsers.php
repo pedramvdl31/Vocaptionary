@@ -25,6 +25,13 @@ class SUsers extends Seeder
 		        'email' => 'pedram@eyelevate.com',
 		        'role' => '1',
 		        'password' => bcrypt('110110')
+		    ],
+		    [
+		        'id' => '3',
+		        'username' => 'robert',
+		        'email' => 'rob@wakefield-studios.com',
+		        'role' => '1',
+		        'password' => bcrypt('110110')
 		    ]
 		 ]);
     }

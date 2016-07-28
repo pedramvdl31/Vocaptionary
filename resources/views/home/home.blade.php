@@ -210,112 +210,56 @@
 		  <li class="list-group-item btn-nxt" navigate-to="single-card" style="overflow: auto;">
 			<div class="cards-container">
 				<div class="cards-image col-md-5 col-sm-5 col-xs-5">
-					<div class="card-image bg" style="margin: 0 auto;background-image: url('http://www.croop.cl/UI/twitter/images/up.jpg');"></div>
+					<div class="card-image bg" style="margin: 0 auto;background-image: url('/assets/images/games/card1.jpg');"></div>
 				</div>
 				<div class="cards-title col-md-5 col-sm-5 col-xs-5" style="overflow: auto;
     				max-height: 100px;">
-					<span>One cannot simply go camping</span>
+					<span>a lion on stilts walking up to a giraffe</span>
 				</div>
 				<div class="cards-rank col-md-2 col-sm-2 col-xs-2">
-					<span class="badge rank-badge">4</span>
+					<span class="badge rank-badge">46</span>
 				</div>
 			</div>
 		  </li>
-		  <li class="list-group-item btn-nxt" navigate-to="single-card" style="overflow: auto;">
+		  <li class="list-group-item btn-nxt" navigate-to="single-card2" style="overflow: auto;">
 			<div class="cards-container">
 				<div class="cards-image col-md-5 col-sm-5 col-xs-5">
-					<div class="card-image bg" style="margin: 0 auto;background-image: url('http://www.croop.cl/UI/twitter/images/up.jpg');"></div>
+					<div class="card-image bg" style="margin: 0 auto;background-image: url('/assets/images/games/card2.jpg');"></div>
 				</div>
 				<div class="cards-title col-md-5 col-sm-5 col-xs-5" style="overflow: auto;
     				max-height: 100px;">
-					<span>One cannot simply go camping</span>
+					<span>a cat wearing circular sunglasses</span>
 				</div>
 				<div class="cards-rank col-md-2 col-sm-2 col-xs-2">
-					<span class="badge rank-badge">4</span>
+					<span class="badge rank-badge">32</span>
 				</div>
 			</div>
 		  </li>
-		  <li class="list-group-item btn-nxt" navigate-to="single-card" style="overflow: auto;">
+		  <li class="list-group-item btn-nxt" navigate-to="single-card3" style="overflow: auto;">
 			<div class="cards-container">
 				<div class="cards-image col-md-5 col-sm-5 col-xs-5">
-					<div class="card-image bg" style="margin: 0 auto;background-image: url('http://www.croop.cl/UI/twitter/images/up.jpg');"></div>
+					<div class="card-image bg" style="margin: 0 auto;background-image: url('/assets/images/games/card3.jpg');"></div>
 				</div>
 				<div class="cards-title col-md-5 col-sm-5 col-xs-5" style="overflow: auto;
     				max-height: 100px;">
-					<span>One cannot simply go camping</span>
+					<span>I don't always play games, but when i do they're Vocaptionary</span>
 				</div>
 				<div class="cards-rank col-md-2 col-sm-2 col-xs-2">
-					<span class="badge rank-badge">4</span>
+					<span class="badge rank-badge">867</span>
 				</div>
 			</div>
 		  </li>
-		  <li class="list-group-item btn-nxt" navigate-to="single-card" style="overflow: auto;">
+		  <li class="list-group-item btn-nxt" navigate-to="single-card4" style="overflow: auto;">
 			<div class="cards-container">
 				<div class="cards-image col-md-5 col-sm-5 col-xs-5">
-					<div class="card-image bg" style="margin: 0 auto;background-image: url('http://www.croop.cl/UI/twitter/images/up.jpg');"></div>
+					<div class="card-image bg" style="margin: 0 auto;background-image: url('/assets/images/games/card4.jpg');"></div>
 				</div>
 				<div class="cards-title col-md-5 col-sm-5 col-xs-5" style="overflow: auto;
     				max-height: 100px;">
-					<span>One cannot simply go camping</span>
+					<span>a kitten nuzzling up to a puppy dog on a chair - cute</span>
 				</div>
 				<div class="cards-rank col-md-2 col-sm-2 col-xs-2">
-					<span class="badge rank-badge">4</span>
-				</div>
-			</div>
-		  </li>
-		  <li class="list-group-item btn-nxt" navigate-to="single-card" style="overflow: auto;">
-			<div class="cards-container">
-				<div class="cards-image col-md-5 col-sm-5 col-xs-5">
-					<div class="card-image bg" style="margin: 0 auto;background-image: url('http://www.croop.cl/UI/twitter/images/up.jpg');"></div>
-				</div>
-				<div class="cards-title col-md-5 col-sm-5 col-xs-5" style="overflow: auto;
-    				max-height: 100px;">
-					<span>One cannot simply go camping</span>
-				</div>
-				<div class="cards-rank col-md-2 col-sm-2 col-xs-2">
-					<span class="badge rank-badge">4</span>
-				</div>
-			</div>
-		  </li>
-		  <li class="list-group-item btn-nxt" navigate-to="single-card" style="overflow: auto;">
-			<div class="cards-container">
-				<div class="cards-image col-md-5 col-sm-5 col-xs-5">
-					<div class="card-image bg" style="margin: 0 auto;background-image: url('http://www.croop.cl/UI/twitter/images/up.jpg');"></div>
-				</div>
-				<div class="cards-title col-md-5 col-sm-5 col-xs-5" style="overflow: auto;
-    				max-height: 100px;">
-					<span>One cannot simply go camping</span>
-				</div>
-				<div class="cards-rank col-md-2 col-sm-2 col-xs-2">
-					<span class="badge rank-badge">4</span>
-				</div>
-			</div>
-		  </li>
-		  <li class="list-group-item btn-nxt" navigate-to="single-card" style="overflow: auto;">
-			<div class="cards-container">
-				<div class="cards-image col-md-5 col-sm-5 col-xs-5">
-					<div class="card-image bg" style="margin: 0 auto;background-image: url('http://www.croop.cl/UI/twitter/images/up.jpg');"></div>
-				</div>
-				<div class="cards-title col-md-5 col-sm-5 col-xs-5" style="overflow: auto;
-    				max-height: 100px;">
-					<span>One cannot simply go camping</span>
-				</div>
-				<div class="cards-rank col-md-2 col-sm-2 col-xs-2">
-					<span class="badge rank-badge">4</span>
-				</div>
-			</div>
-		  </li>
-		  <li class="list-group-item btn-nxt" navigate-to="single-card" style="overflow: auto;">
-			<div class="cards-container">
-				<div class="cards-image col-md-5 col-sm-5 col-xs-5">
-					<div class="card-image bg" style="margin: 0 auto;background-image: url('http://www.croop.cl/UI/twitter/images/up.jpg');"></div>
-				</div>
-				<div class="cards-title col-md-5 col-sm-5 col-xs-5" style="overflow: auto;
-    				max-height: 100px;">
-					<span>One cannot simply go camping</span>
-				</div>
-				<div class="cards-rank col-md-2 col-sm-2 col-xs-2">
-					<span class="badge rank-badge">4</span>
+					<span class="badge rank-badge">52</span>
 				</div>
 			</div>
 		  </li>
@@ -329,13 +273,84 @@
 	<div class="study-page pages" style="display:none">
 		<h3>study</h3>
 	</div>
+	<style type="text/css">
+		
+		.item{
+			width: 50% !important;
+		}
+	</style>
 	<div class="single-card-page pages" style="display:none;text-align:center;padding:20px">
-
+		<div class="col-sm-4">
+		  	<div class="item" >
+		  		<a href="#">
+					<span class="notify-badge">46</span>
+		      		<img width="100%" src="/assets/images/games/card1.jpg"  alt="" />
+				</a>
+			</div>
+		</div>
+		<dl class="dl-horizontal" style="padding-top:10px"> 
+			<dt>Games</dt> 
+				<dd>150</dd> 
+			<dt>Votes</dt> 
+				<dd>63</dd> 
+			<dt>Wins</dt> 
+				<dd>12</dd> 
+			<dt>Decks Added To</dt> 
+				<dd>27</dd> 
+			<dt>Reviews</dt> 
+				<dd>209</dd> 
+		</dl>
+	</div>
+	<div class="single-card2-page pages" style="display:none;text-align:center;padding:20px">
 		<div class="col-sm-4">
 		  	<div class="item">
 		  		<a href="#">
-					<span class="notify-badge">1000</span>
-		      		<img src="http://placehold.it/200x200"  alt="" />
+					<span class="notify-badge">32</span>
+		      		<img width="100%" src="/assets/images/games/card2.jpg"  alt="" />
+				</a>
+			</div>
+		</div>
+		<dl class="dl-horizontal" style="padding-top:10px"> 
+			<dt>Games</dt> 
+				<dd>150tt</dd> 
+			<dt>Votes</dt> 
+				<dd>63</dd> 
+			<dt>Wins</dt> 
+				<dd>12</dd> 
+			<dt>Decks Added To</dt> 
+				<dd>27</dd> 
+			<dt>Reviews</dt> 
+				<dd>209</dd> 
+		</dl>
+	</div>
+	<div class="single-card3-page pages" style="display:none;text-align:center;padding:20px">
+		<div class="col-sm-4">
+		  	<div class="item">
+		  		<a href="#">
+					<span class="notify-badge">867</span>
+		      		<img width="100%" src="/assets/images/games/card3.jpg"  alt="" />
+				</a>
+			</div>
+		</div>
+		<dl class="dl-horizontal" style="padding-top:10px"> 
+			<dt>Games</dt> 
+				<dd>867</dd> 
+			<dt>Votes</dt> 
+				<dd>63</dd> 
+			<dt>Wins</dt> 
+				<dd>12</dd> 
+			<dt>Decks Added To</dt> 
+				<dd>27</dd> 
+			<dt>Reviews</dt> 
+				<dd>209</dd> 
+		</dl>
+	</div>
+	<div class="single-card4-page pages" style="display:none;text-align:center;padding:20px">
+		<div class="col-sm-4">
+		  	<div class="item">
+		  		<a href="#">
+					<span class="notify-badge">52</span>
+		      		<img width="100%" src="/assets/images/games/card4.jpg"  alt="" />
 				</a>
 			</div>
 		</div>

@@ -27,7 +27,7 @@ class CreateUsersTable extends Migration
             $table->string('city', 50)->nullable();
             $table->string('street', 125)->nullable();
             $table->integer('zipcode')->nullable();
-            $table->integer('payment_id')->nullable();
+            $table->integer('robert')->nullable();
             $table->string('company', 25)->nullable();
             $table->tinyInteger('status')->nullable();
             $table->text('avatar')->nullable();
