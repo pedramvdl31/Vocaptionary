@@ -341,23 +341,23 @@
 			</div>
 			<div class="p-image-wrap">
 				<div class="p-image">
-					<div class="p-name"><span>Cooper</span></div>
+					<div class="p-name"><span>Helena</span></div>
 					<div class="fit-image-wrapper" style="background-image: url('/assets/images/games/avatar2.jpg')"></div>
-					<div class="p-caption">100 <i class="glyphicon glyphicon-star"></i></div>
+					<div class="p-caption">122 <i class="glyphicon glyphicon-star"></i></div>
 				</div>				
 			</div>
 			<div class="p-image-wrap">
 				<div class="p-image">
-					<div class="p-name"><span>Cooper</span></div>
+					<div class="p-name"><span>Robert</span></div>
 					<div class="fit-image-wrapper" style="background-image: url('/assets/images/games/avatar3.jpg')"></div>
-					<div class="p-caption">100 <i class="glyphicon glyphicon-star"></i></div>
+					<div class="p-caption">331 <i class="glyphicon glyphicon-star"></i></div>
 				</div>				
 			</div>
 			<div class="p-image-wrap">
 				<div class="p-image">
-					<div class="p-name"><span>Cooper</span></div>
+					<div class="p-name"><span>Kim</span></div>
 					<div class="fit-image-wrapper" style="background-image: url('/assets/images/games/avatar4.jpg')"></div>
-					<div class="p-caption">100 <i class="glyphicon glyphicon-star"></i></div>
+					<div class="p-caption">122 <i class="glyphicon glyphicon-star"></i></div>
 				</div>				
 			</div>
 
