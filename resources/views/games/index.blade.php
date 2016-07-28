@@ -35,6 +35,7 @@
 	#main_wrap{
 		float: left;
     	padding-top: 59px;
+    	width: 100%;
 	}
 	.panel-big{
 		border: 6px solid #d6e9c6 !important;
