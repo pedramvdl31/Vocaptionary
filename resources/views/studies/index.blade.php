@@ -1,222 +1,129 @@
 @extends($layout)
 @section('stylesheets')
-	<link rel="stylesheet" href="/assets/css/studies/index.css">
+  <link rel="stylesheet" href="/assets/css/profile/style.css">
 @stop
 @section('scripts')
-	<script src="/assets/js/studies/index.js"></script>
+  <script src="/assets/js/profile/index.js"></script>
 @stop
+
 @section('content')
 
-<style type="text/css">
-
-</style>
-
-
-<div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
-  <div class="panel panel-default">
-    <div class="panel-heading" role="tab" id="headingOne">
-      <h4 class="panel-title">
-        <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-          Lesson #1
-        </a>
-      </h4>
-    </div>
-    <div id="collapseOne" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingOne">
-      <div class="panel-body">
-
-
-
-
-
-
-               <!-- Here we insert another nested accordion -->
-
-                <div class="panel-group" id="accordion2">
-                  <div class="panel panel-default">
-                    <div class="panel-heading">
-                      <h4 class="panel-title"><a data-toggle="collapse" data-parent="#accordion2" href="#collapseInnerOne">
-                        Writing
-                      </a></h4>
-                    </div>
-                    <div id="collapseInnerOne" class="panel-collapse collapse">
-                      <div class="panel-body">
-                        Anim pariatur cliche...
-                      </div>
-                    </div>
-                  </div>
-                  <div class="panel panel-default">
-                    <div class="panel-heading">
-                      <h4 class="panel-title"><a data-toggle="collapse" data-parent="#accordion2" href="#collapseInnerTwo">
-                        Reading
-                      </a></h4>
-                    </div>
-                    <div id="collapseInnerTwo" class="panel-collapse collapse">
-                      <div class="panel-body">
-                        Anim pariatur cliche...
-                      </div>
-                    </div>
-                  </div>
-                  <div class="panel panel-default">
-                    <div class="panel-heading">
-                      <h4 class="panel-title"><a data-toggle="collapse" data-parent="#accordion2" href="#collapseInnere1">
-                        Examples
-                      </a></h4>
-                    </div>
-                    <div id="collapseInnere1" class="panel-collapse collapse">
-                      <div class="panel-body">
-                        Anim pariatur cliche...
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <!-- Inner accordion ends here -->
+  <div class="container">
+    <header>
+      <div class="bio">
+            <style type="text/css">        
+      </style>
+            <div class="ad-image bg" style="background-image: url('/assets/images/games/up.jpg');"></div>;
+      <div class="desc">
+        <h3>@carlf</h3>
+        <p>Carl Fredricksen is the protagonist in Up. He also appeared in Dug's Special Mission as a minor character.</p>
       </div>
-    </div>
-  </div>
-  <div class="panel panel-default">
-    <div class="panel-heading" role="tab" id="headingTwo">
-      <h4 class="panel-title">
-        <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-          Lesson #2
-        </a>
-      </h4>
-    </div>
-    <div id="collapseTwo" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo">
-      <div class="panel-body">
-
-
-               <!-- Here we insert another nested accordion -->
-
-                <div class="panel-group" id="accordion3">
-                  <div class="panel panel-default">
-                    <div class="panel-heading">
-                      <h4 class="panel-title"><a data-toggle="collapse" data-parent="#accordion3" href="#collapseInnerw2">
-                        Writing
-                      </a></h4>
-                    </div>
-                    <div id="collapseInnerw2" class="panel-collapse collapse">
-                      <div class="panel-body">
-                        Anim pariatur cliche...
-                      </div>
-                    </div>
-                  </div>
-                  <div class="panel panel-default">
-                    <div class="panel-heading">
-                      <h4 class="panel-title"><a data-toggle="collapse" data-parent="#accordion3" href="#collapseInnerr2">
-                        Reading
-                      </a></h4>
-                    </div>
-                    <div id="collapseInnerr2" class="panel-collapse collapse">
-                      <div class="panel-body">
-                        Anim pariatur cliche...
-                      </div>
-                    </div>
-                  </div>
-                  <div class="panel panel-default">
-                    <div class="panel-heading">
-                      <h4 class="panel-title"><a data-toggle="collapse" data-parent="#accordion3" href="#collapseInnere2">
-                        Examples
-                      </a></h4>
-                    </div>
-                    <div id="collapseInnere2" class="panel-collapse collapse">
-                      <div class="panel-body">
-                        Anim pariatur cliche...
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <!-- Inner accordion ends here -->
       </div>
-    </div>
-  </div>
-  <div class="panel panel-default">
-    <div class="panel-heading" role="tab" id="headingThree">
-      <h4 class="panel-title">
-        <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-          Lesson #3
-        </a>
-      </h4>
-    </div>
-    <div id="collapseThree" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThree">
-      <div class="panel-body">
-        Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+
+      <div class="avatarcontainer btn-nxt" navigate-to="profile">
+        <img src="http://www.croop.cl/UI/twitter/images/carl.jpg" alt="avatar" class="avatar">
+        <div class="hover">
+            <div class="icon-twitter"></div>
+        </div>
       </div>
-    </div>
-  </div>
-  <div class="panel panel-default">
-    <div class="panel-heading" role="tab" id="headingThree">
-      <h4 class="panel-title">
-        <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
-          Lesson #4
-        </a>
-      </h4>
-    </div>
-    <div id="collapseFour" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingFour">
-      <div class="panel-body">
-        Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+
+    </header>
+
+    <div class="content">
+      <div class="data">
+        <ul style="padding: 0;">
+          <li>
+            2,934
+            <span>Points</span>
+          </li>
+          <li>
+            1,119
+            <span>Reps</span>
+          </li>
+          <li>
+            530
+            <span>Cards</span>
+          </li>
+        </ul>
       </div>
+
+      <!-- <div class="follow"> <div class="icon-twitter"></div> Follow</div> -->
     </div>
+      <!--<p>Click on the button below to open the Panel.</p>
+      <a  id="open-sidemenu" href="#myPanel" class="ui-btn ui-btn-inline ui-corner-all ui-shadow">Open Panel</a> -->
   </div>
 
+  <style type="text/css">
+      .emoticon {
+        width: 29px;
+        height: 19px;
+            display: inline-block;
+            vertical-align: top;
+        }
+    .flag-us {
+            background-image: url(/assets/images/flag-icons-border.png);
+            background-repeat: no-repeat;
+            background-size: 600px;
+            background-position: -479px -251px;
+        }
 
-  <div class="panel panel-default">
-    <div class="panel-heading" role="tab" id="headingThree">
-      <h4 class="panel-title">
-        <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapse5" aria-expanded="false" aria-controls="collapse5">
-          Lesson #5
-        </a>
-      </h4>
-    </div>
-    <div id="collapse5" class="panel-collapse collapse" role="tabpanel" aria-labelledby="heading5">
-      <div class="panel-body">
-        Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
-      </div>
-    </div>
-  </div>
-  <div class="panel panel-default">
-    <div class="panel-heading" role="tab" id="headingThree">
-      <h4 class="panel-title">
-        <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapse6" aria-expanded="false" aria-controls="collapse6">
-          Lesson #6
-        </a>
-      </h4>
-    </div>
-    <div id="collapse6" class="panel-collapse collapse" role="tabpanel" aria-labelledby="heading6">
-      <div class="panel-body">
-        Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
-      </div>
-    </div>
-  </div>
-  <div class="panel panel-default">
-    <div class="panel-heading" role="tab" id="headingThree">
-      <h4 class="panel-title">
-        <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapse7" aria-expanded="false" aria-controls="collapse7">
-          Lesson #7
-        </a>
-      </h4>
-    </div>
-    <div id="collapse7" class="panel-collapse collapse" role="tabpanel" aria-labelledby="heading7">
-      <div class="panel-body">
-        Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
-      </div>
-    </div>
-  </div>
-  <div class="panel panel-default">
-    <div class="panel-heading" role="tab" id="headingThree">
-      <h4 class="panel-title">
-        <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapse8" aria-expanded="false" aria-controls="collapse8">
-          Lesson #8
-        </a>
-      </h4>
-    </div>
-    <div id="collapse8" class="panel-collapse collapse" role="tabpanel" aria-labelledby="heading8">
-      <div class="panel-body">
-        Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
-      </div>
-    </div>
-  </div>
+        .flag-wrapper {
+          position: relative;
+        }
+        .more-flags{
+        width: 44px;
+        left: -7px;
+        top: 2px;
+        /* margin-top: 2px; */
+        padding: 4px;
+        padding-bottom: 6px;
+        z-index: 9999999;
+        position: relative;
+        background: gainsboro;
+        }
+        .fbtn{
+          height: 33px;
+        width: 53px;
+        padding: 7px;
+        }
+        .flag-dropdown {
+        text-align: right !important;
+        width: 100% !important;
+        min-width: 20px !important;
+        padding-top: 0;
+    }
+    .flag-dropdown li{
+      width: 40px;
+      margin-top: 4px;
+    }
+    #page-body{
+      overflow: visible;
+    }
+  </style>
 
+  <div id="page-body" class="profile-page pages">
 
-</div>
+    <div class="flag-wrapper">
+      <div class="btn-group">
+        <button type="button" class="btn btn-default dropdown-toggle btn-xs fbtn" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          <i tab="1" txt="blaugh" class="ec emoticon flag-us"></i>
+        <span class="caret"></span>
+        </button>
+        <ul class="dropdown-menu flag-dropdown">
+          <li class="li1"><i tab="1" txt="blaugh" class="ec emoticon flag-us"></i></li>
+          <li class="li1"><i tab="1" txt="blaugh" class="ec emoticon flag-us"></i></li>
+          <li class="li1"><i tab="1" txt="blaugh" class="ec emoticon flag-us"></i></li>
+        </ul>
+      </div>
+    </div>
+
+    <button type="button" class="btn btn-default btn-lg raised">
+    RANDOM New Card
+    </button>
+    <button id="to-card-search" href="" class="btn btn-primary btn-lg raised">SEARCH for a Card
+    </button>
+    <button id="to-review" href="{!!route('game_study')!!}" class="btn btn-info btn-lg raised">Review Deck
+    </button>
+  </div>
 
 @stop
