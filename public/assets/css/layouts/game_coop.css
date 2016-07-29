@@ -1,0 +1,296 @@
+.navigation-bar{
+  border-color: #101010;
+  background-image: -webkit-linear-gradient(#54b4eb, #2fa4e7 60%, #1d9ce5);
+  background-image: -o-linear-gradient(#54b4eb, #2fa4e7 60%, #1d9ce5);
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#54b4eb), color-stop(60%, #2fa4e7), to(#1d9ce5));
+  background-image: linear-gradient(#54b4eb, #2fa4e7 60%, #1d9ce5);
+  background-repeat: no-repeat;
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ff54b4eb', endColorstr='#ff1d9ce5', GradientType=0);
+  border-bottom: 1px solid #178acc;
+  -webkit-filter: none;
+  filter: none;
+  -webkit-box-shadow: 0 1px 10px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 1px 10px rgba(0, 0, 0, 0.1);    
+}
+.navbar-fixed-top {
+  top: 0;
+  border-width: 0 0 1px;
+}
+@media (min-width: 768px){
+    .navbar-fixed-top, .navbar-fixed-bottom {
+      border-radius: 0;
+    }
+    .navigation-bar {
+        border-radius: 4px;
+    }
+}
+.navbar-fixed-top, .navbar-fixed-bottom {
+  position: fixed;
+  right: 0;
+  left: 0;
+  z-index: 1030;
+}
+.navigation-bar {
+  position: relative;
+  min-height: 50px;
+  margin-bottom: 20px;
+  border: 1px solid transparent;
+  border-left: 0;
+  border-right: 0;
+}
+.nav-btn{
+    margin: 9px 9px 0 0;
+    float: right;
+    height: 30px;
+    width: 100px;
+}
+
+
+/* background setup */
+.background {
+    background-repeat:no-repeat;
+    /* custom background-position */
+    background-position:50% 50%;
+    /* ie8- graceful degradation */
+    background-position:50% 50%\9 !important;
+}
+
+/* fullscreen setup */
+html, body {
+    /* give this to all tags from html to .fullscreen */
+    height:100%;
+}
+.fullscreen,
+.content-a {
+    width:100%;
+    min-height:100%;
+}
+.not-fullscreen,
+.not-fullscreen .content-a,
+.fullscreen.not-overflow,
+.fullscreen.not-overflow .content-a {
+    height:100%;
+    overflow:hidden;
+}
+
+/* visual styles */
+
+.not-fullscreen {
+    height:50%;
+}
+
+.ui-panel-display-reveal {
+    box-shadow: none !important; 
+}
+.ui-panel-inner {
+    padding: 0 !important;
+}
+.side-btn{
+    color: #adadad;
+    padding: 15px 15px 15px 15px;
+}
+.act{
+    background-color: #e9e9e9 !important;
+}
+.side-btn-title{
+    margin-left: 25px;
+
+}
+.side-jumbotron{
+    height: 90px;
+    background-color: #5cc0ff;
+}
+#site-title{
+  color: white;
+  margin:0;padding-top:14px;width: 16em;
+}
+#overlay{
+    position: absolute;
+    /* background: gray; */
+    background: rgba(138, 138, 138, 0.5);
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: none;
+    /* opacity: 0.5; */
+}
+.btn-facebook {
+    color: #fff !important;
+    background-color: #3b5998 !important;
+    border-color: rgba(0,0,0,0.2) !important;
+}
+.btn-social {
+    position: relative;
+    padding-left: 44px;
+    text-align: left;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.btn-social>:first-child {
+    position: absolute;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    width: 32px;
+    line-height: 34px;
+    font-size: 1.6em;
+    text-align: center;
+    border-right: 1px solid rgba(0,0,0,0.2);
+}
+.facebook-btn-text{
+  font-size: 12px;
+}
+#main-overlay{
+  background-color: white;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 999999;
+}
+.loading-img{
+  width: 30px;
+}
+#loading-wrapper{
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  width: 40%;
+  height: 50%;
+}
+#main-container{
+  text-align: center;
+  margin: 0 auto;float:none;
+  padding:0
+}
+#inner-container{
+  padding:0
+}
+
+/**************************
+  DEFAULT BOOTSTRAP STYLES
+**************************/
+
+.btn {
+  display: inline-block;
+  padding: 6px 12px;
+  margin-bottom: 0;
+  font-size: 14px;
+  font-weight: normal;
+  line-height: 1.42857143;
+  text-align: center;
+  white-space: nowrap;
+  vertical-align: middle;
+  cursor: pointer;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  background-image: none;
+  border: 1px solid transparent;
+  border-radius: 4px;
+  padding: 10px 16px;
+}
+  
+.btn-lg {
+  font-size: 18px;
+  line-height: 1.33;
+  border-radius: 6px !important;
+}
+
+.btn-primary {
+  color: #fff !important;
+  background-color: #428bca !important;
+  border-color: #357ebd !important;
+}
+
+.btn-primary:hover,
+.btn-primary:focus,
+.btn-primary:active,
+.btn-primary.active,
+.open .dropdown-toggle.btn-primary {
+  color: #fff;
+  background-color: #3276b1;
+  border-color: #285e8e;
+}
+
+/***********************
+  RAISED BUTTONS
+************************/
+.btn-primary.raised {
+    box-shadow: 0 3px 0 0 #007299;
+}
+.btn-primary.raised:active, .btn-primary.raised.active {
+    background: #33a6cc;
+    box-shadow: none;
+    margin-bottom: -3px;
+    margin-top: 3px;
+}
+
+/***********************
+  CUSTON BTN VALUES
+************************/
+
+.btn {
+    padding: 14px 24px;
+    border: 0 none;
+    font-weight: 700;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+.btn:focus, .btn:active:focus, .btn.active:focus {
+    outline: 0 none;
+}
+
+.btn-primary {
+    background: #0099cc;
+    color: #ffffff !important;
+}
+.btn-primary:hover, .btn-primary:focus, .btn-primary:active, .btn-primary.active, .open > .dropdown-toggle.btn-primary {
+    background: #33a6cc;
+}
+.btn-primary:active, .btn-primary.active {
+    background: #007299;
+    box-shadow: none;
+}
+
+  /*END*/
+/***********************
+  OUTLINE BUTTONS
+************************/
+
+.btn.outline {
+    background: none !important;
+    padding: 12px 22px !important;
+}
+.btn-primary.outline {
+    border: 2px solid #0099cc !important;
+    color: #0099cc !important;
+}
+.btn-primary.outline:hover, .btn-primary.outline:focus, .btn-primary.outline:active, .btn-primary.outline.active, .open > .dropdown-toggle.btn-primary {
+    color: #33a6cc !important;
+    border-color: #33a6cc !important;
+}
+.btn-primary.outline:active, .btn-primary.outline.active {
+    border-color: #007299 !important;
+    color: #007299 !important;
+    box-shadow: none !important;
+}
+#myPanel{
+  z-index: 99999;
+}
+#om{
+  position: absolute;
+  left: 10px;
+  top: 10px;
+  background: transparent;
+  z-index: 9999;
+}
+#omi{
+  color: white;background: transparent;font-size: 27px;
+}

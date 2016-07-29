@@ -25,12 +25,18 @@ use Config;
 class GamesController extends Controller
 {
     public function __construct() {
-        $this->layout_game = 'layouts.games';
+        $this->layout_game = 'layouts.games_coop';
         $this->layout_study = 'layouts.studies';
     }
 
     public function getPlayIndex() {
         return view('games.index')
+        ->with('layout',$this->layout_game);
+    }
+
+
+    public function getPlayCoopIndex() {
+        return view('games.index_coop')
         ->with('layout',$this->layout_game);
     }
 
