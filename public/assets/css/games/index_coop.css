@@ -1,12 +1,253 @@
-#page-overlay-notification{
-	background-color: white;
-	height: 100%;
-	width: 100%;
-	position: absolute;
-	top: 0;
-	left: 0;
-	z-index: 1;
+.container header{
+    position: relative;
 }
+.avatarcontainer {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  top: 221px;
+  margin: auto;
+  width: 70px;
+  height: 70px;
+  display: block; 
+}
+/*CSS ANIMATIONS*/\
+/*view nav*/
+#n{
+    width: 100%;
+    float: left;
+    height: 29px;
+}
+.pages{
+    float: left;
+    width: 100%;
+}
+.pages-view{
+    float: left;
+    width: 100%;
+}
+/*CSS ANIMATIONS END*/
+.item{
+    width: 50% !important;
+}
+/*LOADING PAGE CSS*/
+@font-face {
+    font-family: cartwheel;
+    src: url(/assets/fonts/cartwheel.otf);
+}
+.cwf{
+    font-family: cartwheel;
+}
+#l{
+    height: 100%;
+    width: 100%;
+    top: 0;
+    position: relative;
+    background-color: black;
+    left: 0;
+}
+#lg{
+    margin: 0 auto;
+    width: 150px;
+    position: relative;
+    top: 40%;
+    margin-bottom: 20px;
+}
+#lt{
+    margin: 0 auto;
+    width: 150px;
+    position: relative;
+    top: 40%;
+    color: #fefe00;
+    font-weight: 900;
+    font-family: cartwheel;
+    font-size: 16px;
+}
+/*LOADING PAGE CSS END!*/
+
+/*Page A CSS*/
+#a{
+	display: none;
+  	z-index: 100;
+}
+.card-image{
+    height: 100px;
+    width: 100px;
+	  background-size: cover;
+	  background-repeat: no-repeat;
+	  background-position: 50% 50%;
+	  border-radius: 0 !important;
+}
+.cards-container{
+	    height: 110px;
+}
+.cards-title{
+	text-align: left;
+}	
+.cards-title{
+	margin-top: 20px;
+}
+.cards-rank{
+}
+.rank-badge{
+	height: 20px;
+    text-align: initial;
+    margin-top: 40px;
+    vertical-align: middle;
+}
+.item {
+    position:relative;
+    padding-top:20px;
+    display:inline-block;
+}
+.notify-badge{
+    position: absolute;
+    right:-20px;
+    top:10px;
+    background:red;
+    text-align: center;
+    border-radius: 30px 30px 30px 30px;
+    color:white;
+    padding:5px 10px;
+    font-size:20px;
+}
+/* Extra Small Devices, Phones */ 
+@media only screen and (max-width : 480px) {
+
+}
+
+@media only screen and (max-width : 320px) {
+    .card-image{
+	    height: 50px;
+	    width: 50px;
+		background-size: cover;
+		background-repeat: no-repeat;
+		background-position: 50% 50%;
+		border-radius: 0 !important;
+	} 
+	.cards-title{
+		margin-top: 0;
+	}
+}
+.emoticon {
+    width: 29px;
+	height: 19px;
+    display: inline-block;
+    vertical-align: top;
+}
+.flag-us {
+    background-image: url(/assets/images/flag-icons-border.png);
+    background-repeat: no-repeat;
+    background-size: 600px;
+    background-position: -435px -497px;
+}
+
+.btn-flag-wrapper {
+	position: relative;
+}
+.flag-wrapper{
+	position: absolute;
+    top: 11px;
+    right: 69px;
+    width: 30px;
+}
+.more-flags{
+    width: 44px;
+    left: -7px;
+    top: 2px;
+    /* margin-top: 2px; */
+    padding: 4px;
+    padding-bottom: 6px;
+    z-index: 9999999;
+    position: relative;
+    background: gainsboro;
+}
+.fbtn{
+	height: 33px;
+    width: 53px;
+    padding: 7px;
+}
+.flag-dropdown {
+    text-align: right !important;
+    width: 100% !important;
+    min-width: 20px !important;
+    padding-top: 0;
+}
+.flag-dropdown li{
+	width: 40px;
+	margin-top: 4px;
+}
+#page-body{
+	overflow: visible;
+}
+.btn-wrapper{
+	margin-bottom:10px; 
+}
+/*PAGE A CSS END*/
+
+
+
+.a{
+  background-color: #ffffff;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+#b{
+	display: none;
+	z-index: 99;
+}
+#c{
+	display: none;
+	z-index: 98;
+}
+#d{
+	display: none;
+	z-index: 97;
+}
+#e{
+	display: none;
+	z-index: 99;
+}
+/*join prograssbar 1*/
+#b1,#b2,#b3,#b4{
+	opacity: 0;
+    -webkit-transition: width 1s; /* Safari */
+    transition: width 1s;
+}
+
+
+
+
+
+
+
+
+
+
+
+/*BARS*/
+#jb{
+	float: left;
+	width: 100%;
+	background-color: white;
+	padding: 0 10px;
+}
+
+
+
+
+
+
+
+
+
+/*---*/
+/*OLD FILES*/
 #starting-overlay{
 	background-color: white;
 	height: 100%;
@@ -65,12 +306,6 @@
     padding: 15px;
     background: #9e9e9e;
     margin-top: 10px;
-}
-#results-bar-wt{
-	float: left;
-	width: 100%;
-	background-color: white;
-	padding: 0 10px;
 }
 
 .my-btn{

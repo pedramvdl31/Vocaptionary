@@ -27,6 +27,7 @@ class GamesController extends Controller
     public function __construct() {
         $this->layout_game = 'layouts.games_coop';
         $this->layout_study = 'layouts.studies';
+        $this->layout_react = 'layouts.react';
     }
 
     public function getPlayIndex() {
@@ -44,6 +45,12 @@ class GamesController extends Controller
         return view('studies.index')
         ->with('layout',$this->layout_study);
     }
+
+    public function getReactPageIndex() {
+        return view('react.index')
+        ->with('layout',$this->layout_react);
+    }
+
 
 
 }

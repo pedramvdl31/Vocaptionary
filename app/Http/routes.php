@@ -7,6 +7,7 @@ Route::group(['middleware' => ['web','beforeFilter']], function () {
 	Route::get('play',  ['as' => 'game_play','uses' => 'GamesController@getPlayIndex']);
 	Route::get('play-coop',  ['as' => 'game_play_coop','uses' => 'GamesController@getPlayCoopIndex']);
 	Route::get('study',  ['as' => 'game_study','uses' => 'GamesController@getStudyIndex']);
+	Route::get('react-page',  ['as' => 'react_page','uses' => 'GamesController@getReactPageIndex']);
 	Route::get('home/logout', 'HomeController@getLogoutUser');	
 });
 

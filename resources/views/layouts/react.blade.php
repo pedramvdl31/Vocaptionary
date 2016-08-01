@@ -11,11 +11,13 @@
   {!! Html::style('http://fonts.googleapis.com/css?family=Lobster|Oswald:400,300,700') !!}
   <!-- Latest compiled and minified CSS -->
   <link rel="stylesheet" href="/assets/css/bootstrap.min.css">
-  <!-- Font Awesome -->
-  <link rel="stylesheet" href="/assets/plugins/font-awesome-4.6.3/css/font-awesome.min.css">
-  {!! Html::style('/assets/css/general_styling/gs_1.css')!!}
-  {!! Html::style('/assets/css/layouts/game_coop.css')!!}
-  @yield('stylesheets')
+  <!-- Optional theme -->
+  <link rel="stylesheet" href="/assets/css/bootstrap-theme.min.css">
+
+<script src="https://fb.me/react-with-addons-15.3.0.min.js"></script>
+<script src="https://fb.me/react-dom-15.3.0.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/babel-core/5.8.34/browser.min.js"></script>
+  <script src="/assets/js/react-index.js"></script>
 
   <!--[if lt IE 9]>
   <script src="http://css3-mediaqueries-js.googlecode.com/files/css3-mediaqueries.js"></script>
@@ -24,13 +26,22 @@
 </head>
 <body>
 
-    <div id="main-container" class="col-md-6 col-sm-12 col-xs-12 text-center" style="height:100%;">
-      <div id="inner-container" data-role="main" class="ui-content" style="height:100%;">
-        @yield('content')
-      </div>
-    </div>
+  <div id="example"></div>
+  <script type="text/babel">
+
+
+
+
+
+
+
+
+
+
+  </script>
+
 
 </body>
 <script src="/assets/plugins/jQuery/jQuery-2.1.4.min.js"></script>
-@yield('scripts')
+<script src="/assets/plugins/jQuery_mobile/jquery.mobile-1.4.5.min.js"></script>
 </html>

@@ -1,51 +1,8 @@
-.navigation-bar{
-  border-color: #101010;
-  background-image: -webkit-linear-gradient(#54b4eb, #2fa4e7 60%, #1d9ce5);
-  background-image: -o-linear-gradient(#54b4eb, #2fa4e7 60%, #1d9ce5);
-  background-image: -webkit-gradient(linear, left top, left bottom, from(#54b4eb), color-stop(60%, #2fa4e7), to(#1d9ce5));
-  background-image: linear-gradient(#54b4eb, #2fa4e7 60%, #1d9ce5);
-  background-repeat: no-repeat;
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ff54b4eb', endColorstr='#ff1d9ce5', GradientType=0);
-  border-bottom: 1px solid #178acc;
-  -webkit-filter: none;
-  filter: none;
-  -webkit-box-shadow: 0 1px 10px rgba(0, 0, 0, 0.1);
-  box-shadow: 0 1px 10px rgba(0, 0, 0, 0.1);    
+/* fullscreen setup */
+html, body {
+    /* give this to all tags from html to .fullscreen */
+    height:100%;
 }
-.navbar-fixed-top {
-  top: 0;
-  border-width: 0 0 1px;
-}
-@media (min-width: 768px){
-    .navbar-fixed-top, .navbar-fixed-bottom {
-      border-radius: 0;
-    }
-    .navigation-bar {
-        border-radius: 4px;
-    }
-}
-.navbar-fixed-top, .navbar-fixed-bottom {
-  position: fixed;
-  right: 0;
-  left: 0;
-  z-index: 1030;
-}
-.navigation-bar {
-  position: relative;
-  min-height: 50px;
-  margin-bottom: 20px;
-  border: 1px solid transparent;
-  border-left: 0;
-  border-right: 0;
-}
-.nav-btn{
-    margin: 9px 9px 0 0;
-    float: right;
-    height: 30px;
-    width: 100px;
-}
-
-
 /* background setup */
 .background {
     background-repeat:no-repeat;
@@ -55,11 +12,6 @@
     background-position:50% 50%\9 !important;
 }
 
-/* fullscreen setup */
-html, body {
-    /* give this to all tags from html to .fullscreen */
-    height:100%;
-}
 .fullscreen,
 .content-a {
     width:100%;
@@ -72,13 +24,10 @@ html, body {
     height:100%;
     overflow:hidden;
 }
-
 /* visual styles */
-
 .not-fullscreen {
     height:50%;
 }
-
 .ui-panel-display-reveal {
     box-shadow: none !important; 
 }
@@ -140,42 +89,19 @@ html, body {
     text-align: center;
     border-right: 1px solid rgba(0,0,0,0.2);
 }
-.facebook-btn-text{
-  font-size: 12px;
-}
-#main-overlay{
-  background-color: white;
-  height: 100%;
-  width: 100%;
-  position: absolute;
-  top: 0;
-  left: 0;
-  z-index: 999999;
-}
-.loading-img{
-  width: 30px;
-}
-#loading-wrapper{
-  position: absolute;
-  left: 50%;
-  top: 50%;
-  transform: translate(-50%, -50%);
-  width: 40%;
-  height: 50%;
-}
+
 #main-container{
   text-align: center;
   margin: 0 auto;float:none;
   padding:0
 }
 #inner-container{
-  padding:0
+  padding:0;
+  margin: 0;
 }
-
 /**************************
   DEFAULT BOOTSTRAP STYLES
 **************************/
-
 .btn {
   display: inline-block;
   padding: 6px 12px;
