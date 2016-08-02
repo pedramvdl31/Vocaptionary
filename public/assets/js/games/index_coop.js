@@ -11,6 +11,7 @@ Component = {
 		AppFunctions.PreLoadDom();
 	},
 	Initiate: function() {
+		AppFunctions.CacheAnimations();
 		AppFunctions.PageLodeView();
 	},
 	events: function() {
@@ -18,12 +19,12 @@ Component = {
 		EventListeners.ViewChangeHandler();
 		EventListeners.BackNavigateHandler();
 	}
+
 }
 
 EventListeners = {
 	PageChangeHandler(){
 		$(DomElements['next-page']).on("click", function(){
-			//hide all pages
 			for (var i=0;i<DomElements['pages'].length;i+=1){
 			  DomElements['pages'][i].style.display = 'none';
 			}
@@ -50,7 +51,6 @@ EventListeners = {
 		});	
 	}
 }
-
 //FUNCTIONS
 AppFunctions = {
 	PreLoadDom(){
@@ -70,6 +70,30 @@ AppFunctions = {
 			'view-back-btn': document.getElementsByClassName("view-back-btn")
 		};
 	},
+	CacheAnimations(){
+		for (var j=0;j<DomElements['pages'].length;j+=1){
+			for (var i=0;i<DomElements['pages'].length;i+=1){
+			  DomElements['pages'][i].style.display = 'none';
+			}
+			switch (j) {
+			    case 0:
+			    	DomElements['div-a'].style.display = 'block';
+			        break;
+			    case 1:
+			    	DomElements['div-b'].style.display = 'block';
+			        break;
+			    case 2:
+			    	DomElements['div-c'].style.display = 'block';
+			        break;
+			    case 3:
+			    	DomElements['div-d'].style.display = 'block';
+			        break;
+			}
+		}
+		for (var i=0;i<DomElements['pages'].length;i+=1){
+		  DomElements['pages'][i].style.display = 'none';
+		}
+	},
 	PageLodeView(){
 		var everythingLoaded = setInterval(function() {
 		  if (/loaded|complete/.test(document.readyState)) {
@@ -84,82 +108,4 @@ AppFunctions = {
 		DomElements['div-a'].style.display="block";
 		DomElements['div-l'].style.display="none";
 	}
-
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-// $(document).ready(function(){
-// 	var everythingLoaded = setInterval(function() {
-// 	  if (/loaded|complete/.test(document.readyState)) {
-// 	    clearInterval(everythingLoaded);
-// 	    window.setTimeout(function() {
-// 	    	init();
-// 		}, 1000);
-// 	  }
-// 	}, 200);
-// });
-// function init(){
-// 	document.getElementById("a").style.display="block";
-// 	document.getElementById("l").style.display="none";
-// }
-
-// function t(){
-// 	window.vt = $('#vt');
-// 	vt.knob();
-// 	vt.val('10').trigger("change");
-// 	vt.trigger(
-//         'configure',
-//         {
-//             "min":0,
-//             "max":10
-//         }
-// 	);
-// }
-// function FakeGameStage1(){
-// 	// timer for joining
-// 	var s = 1;
-// 	var cw = setInterval(function(){ 
-// 		 	document.getElementById("js").innerHTML=s;
-// 			s = s+1;
-// 	}, 1000);
-// 	//fill the prograss bars
-// 	var b = 0;
-// 	var fb = setInterval(function(){ 
-// 		b = b+1;
-// 		var l = document.getElementById("b"+b);
-// 		l.style.opacity = 1;
-// 		l.style.width = "25%";		
-// 		if (b==4) {clearInterval(fb)}	
-// 	}, 1000);
-// 	window.setTimeout(function() {
-// 		document.getElementById("b").setAttribute('class','slide-out a');
-// 		// document.getElementById("c").setAttribute('class','slide-in a');
-// 		window.setTimeout(function() {
-// 			FakeGameStage2();
-// 		}, 1000);
-// 	}, 5100);
-// }
-// function FakeGameStage2(){
-// 	var max = 10;
-// 	var ktimer = setInterval(function(){ 
-// 		max = max-1;
-// 		vt.val(max).trigger("change");
-// 		if (max == -1)
-// 		{
-// 		 	clearInterval(ktimer);
-// 		}
-// 	}, 1000);
-// }
-
-
