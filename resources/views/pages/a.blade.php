@@ -44,7 +44,7 @@
 		<button page-href="b" type="button" class="btn btn-default btn-lg raised btn-block next-page" >My Cards</button>		
 	</div>
 	<div class="btn-wrapper">
-		<button page-href="c" class="btn btn-primary btn-lg raised btn-block next-page">PLAY the Caption Game</button>
+		<button id="playgame" page-href="c" class="btn btn-primary btn-lg raised btn-block next-page">PLAY the Caption Game</button>
 	</div>
 	<div class="btn-wrapper">
 		<button page-href="d" class="btn btn-info btn-lg btn-block raised next-page">STUDY Language</button>

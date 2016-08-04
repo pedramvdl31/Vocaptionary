@@ -1,8 +1,8 @@
 @extends($layout)
 @section('stylesheets')
-<!-- 	<link rel="stylesheet" href="/packages/jQuery_Circular_Countdown/TimeCircles.css">
+	<link rel="stylesheet" href="/packages/jQuery_Circular_Countdown/TimeCircles.css">
 	<link rel="stylesheet" href="/packages/bootstrap-star-rating-master/css/star-rating.css">
-	<link rel="stylesheet" href="/assets/css/cheat_sheet.css"> -->
+	<link rel="stylesheet" href="/assets/css/cheat_sheet.css">
 	<link rel="stylesheet" href="/assets/css/profile/reset.css">
 	<link rel="stylesheet" href="/assets/css/games/index_coop.css">
 	<link rel="stylesheet" href="/assets/css/profile/style_coop.css">

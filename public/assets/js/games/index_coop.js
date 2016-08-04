@@ -18,17 +18,38 @@ Component = {
 		EventListeners.PageChangeHandler();
 		EventListeners.ViewChangeHandler();
 		EventListeners.BackNavigateHandler();
+	},
+	Game: function() {
+		GameFunc.InitiateTempGame();
 	}
-
 }
+
+//FUNCTIONS
+GameFunc = {
+	InitiateWindowVars(){
+
+	},
+	GameFuncInitiateStage1(){
+
+	},
+	InitiateTempGame(){
+		var html = '<iframe id="game-iframe" src="/play"></iframe>';
+		document.getElementById("play-iframe-wrapper").innerHTML = html;
+	}
+}
+
 
 EventListeners = {
 	PageChangeHandler(){
 		$(DomElements['next-page']).on("click", function(){
+			var _attr = this.getAttribute('page-href');
 			for (var i=0;i<DomElements['pages'].length;i+=1){
 			  DomElements['pages'][i].style.display = 'none';
 			}
-			DomElements['div-'+this.getAttribute('page-href')].style.display = 'block';
+			DomElements['div-'+_attr].style.display = 'block';
+
+			if (_attr=='c')
+				Component.Game();
 		});	
 	},
 	ViewChangeHandler(){
@@ -50,7 +71,7 @@ EventListeners = {
 			document.getElementById(this.getAttribute('back-href')).style.display = 'block';
 		});	
 	}
-}
+};
 //FUNCTIONS
 AppFunctions = {
 	PreLoadDom(){
@@ -108,4 +129,4 @@ AppFunctions = {
 		DomElements['div-a'].style.display="block";
 		DomElements['div-l'].style.display="none";
 	}
-}
+};

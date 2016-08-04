@@ -7,5 +7,5 @@
 			</div>
 		</nav>	
 	</div>
-
-	<h1>Play</h1>
+	<div id="play-iframe-wrapper">
+	</div>

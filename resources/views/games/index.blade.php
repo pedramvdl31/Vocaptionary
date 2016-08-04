@@ -34,7 +34,7 @@
 	}
 	#main_wrap{
 		float: left;
-    	padding-top: 59px;
+    	padding-top: 0 !important;
     	width: 100%;
 	}
 	.panel-big{
@@ -127,7 +127,8 @@
 }
 	</style>
 	<div id="page-overlay-notification" class=" ">
-		<center id="loading-wrapper-wt"><img class="loading-img" src="/assets/images/icons/gif/loading1.gif">
+		<center id="loading-wrapper-wt">
+			<i class="fa fa-cog fa-spin fa-3x fa-fw" aria-hidden="true"></i>
 			<p>&nbsp;</p>
 			<p>Searching for worthy players.</p>
 			<p>Expected wait is < 2 minutes</p>
@@ -360,8 +361,6 @@
 					<div class="p-caption">122 <i class="glyphicon glyphicon-star"></i></div>
 				</div>				
 			</div>
-
-
 		</div>
 		<div id="page-body">
 			<div class="control-bar-v clearfix">
