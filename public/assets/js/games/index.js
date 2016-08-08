@@ -19,8 +19,7 @@ games = {
 	},
 	events: function() {
         $('.card-img').click(function(){
-        	var cos = $(this).find('.ad-image:first').css('background-image');
-        	chosen_one_src = cos.replace('url(','').replace(')','').replace(/\"/gi, "");
+        	chosen_one_src = $(this).find('.ad-image:first').attr('this-url');
         	$( ".card-img" ).unbind();
          	$('.card-img').css('background-color','white');
          	$('.card-img').css('opacity','0.3');

@@ -391,19 +391,19 @@
 				<div id="mygallery" >
 
 					<div class="images-wrapp card-img">
-				    	<div class="ad-image" style="background-image: url('/assets/images/games/game1.jpg');">
+				    	<div this-url="/assets/images/games/game1.jpg" class="ad-image" style="background-image: url('/assets/images/games/game1.jpg');">
 				    	</div>
 					</div>
 					<div class="images-wrapp card-img">
-				    	<div class="ad-image" style="background-image: url('/assets/images/games/game2.jpg');">
+				    	<div this-url="/assets/images/games/game2.jpg" class="ad-image" style="background-image: url('/assets/images/games/game2.jpg');">
 				    	</div>
 					</div>
 					<div class="images-wrapp card-img">
-						<div class="ad-image" style="background-image: url('/assets/images/games/game3.jpg');">
+						<div this-url="/assets/images/games/game3.jpg" class="ad-image" style="background-image: url('/assets/images/games/game3.jpg');">
 						</div>
 					</div>
 					<div class="images-wrapp card-img">
-						<div class="ad-image" style="background-image: url('/assets/images/games/game4.jpg');">
+						<div this-url="/assets/images/games/game4.jpg" class="ad-image" style="background-image: url('/assets/images/games/game4.jpg');">
 						</div>
 					</div>
 
