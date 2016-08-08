@@ -127,6 +127,16 @@ AppFunctions = {
 	},
 	ClearLoading(){
 		DomElements['div-a'].style.display="block";
-		DomElements['div-l'].style.display="none";
+	    var fadeEffect = setInterval(function () {
+	        if (!DomElements['div-l'].style.opacity) {
+	            DomElements['div-l'].style.opacity = 1;
+	        }
+	        if (DomElements['div-l'].style.opacity < 0.1) {
+	            clearInterval(fadeEffect);
+	            DomElements['div-l'].style.display="none";
+	        } else {
+	            DomElements['div-l'].style.opacity -= 0.1;
+	        }
+	    }, 15);
 	}
 };

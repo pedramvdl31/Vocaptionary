@@ -19,7 +19,8 @@ games = {
 	},
 	events: function() {
         $('.card-img').click(function(){
-        	chosen_one_src = $(this).find('img:first').attr('src'); 
+        	var cos = $(this).find('.ad-image:first').css('background-image');
+        	chosen_one_src = cos.replace('url(','').replace(')','').replace(/\"/gi, "");
         	$( ".card-img" ).unbind();
          	$('.card-img').css('background-color','white');
          	$('.card-img').css('opacity','0.3');
@@ -90,7 +91,7 @@ function prepare_game_window(){
     var caption_game_html = '<div class="control-bar-v clearfix">'+
 								'<div class="inner-div">'+
 									'<div class="timer-wrap">'+
-										'<input id="WriteCaptionTimer" data-role="none" data-width="100" data-height="100" type="text" value="0" data-linecap="round">'+		
+										'<input id="WriteCaptionTimer" data-role="none" data-width="70" data-height="70" type="text" value="0" data-linecap="round">'+		
 									'</div>'+
 									'<div id="results-bar">'+
 										'<div id="progress-wrapper-fns" class="progress">'+
@@ -131,10 +132,14 @@ function prepare_game_window(){
 	});
 }
 function ViewCaptionResultPage(){
-	var html = '	<div class="control-bar-v clearfix">'+
+	var html = 
+					'<div id="card-image-holder">'+
+						'<img src = "'+chosen_one_src+'" class = "card-img img-thumbnail">'+
+					'</div>'+
+					'<div class="control-bar-v clearfix">'+
 						'<div class="inner-div">'+
 							'<div class="timer-wrap">'+
-								'<input id="RankingTimer" data-role="none" data-width="100" data-height="100" type="text" value="0" data-linecap="round">'+		
+								'<input id="RankingTimer" data-role="none" data-width="70" data-height="70" type="text" value="0" data-linecap="round">'+		
 							'</div>'+
 							'<div id="results-bar">'+
 								'<div id="progress-wrapper-rnk" class="progress">'+
@@ -150,7 +155,7 @@ function ViewCaptionResultPage(){
 								  '<div class="panel-heading clearfix" style="text-align: left;">'+
 								  	'<div class="heading-wrapper clearfix">'+
 								  		'<div class="heading-name">'+
-								  			'<span id="name-text">Robert&nbsp;<span class="new-cap rank-cap-1"></span></span>'+
+								  			'<span id="name-text">Helena&nbsp;<span class="new-cap rank-cap-1"></span></span>'+
 								  		'</div>'+
 								  		'<div class="heading-star">'+
 											'<input id="rank-1" data-size="xs" class="input-7-xs"  name="input-7-xs" value="2.5" class="rating-loading" data-role="none">'+
@@ -161,7 +166,7 @@ function ViewCaptionResultPage(){
 										'<div class="form-group cap-fg">'+
 										    '<div class="input-group">'+
 										        '<div class="caption-text">'+
-										        	'<p>Bootstrap makes front-end web development faster and easier. Its made for folks of all skill levels, devices of all shapes, and projects of all sizes.</p>'+
+										        	'<p>Who needs forks & knives?</p>'+
 										        '</div>'+
 										    '</div>'+
 										'</div>'+
@@ -175,7 +180,7 @@ function ViewCaptionResultPage(){
 								  '<div class="panel-heading clearfix" style="text-align: left;">'+
 								  	'<div class="heading-wrapper clearfix">'+
 								  		'<div class="heading-name">'+
-								  			'<span id="name-text">Cooper&nbsp;<span class="new-cap rank-cap-2"></span></span>'+
+								  			'<span id="name-text">Robert&nbsp;<span class="new-cap rank-cap-2"></span></span>'+
 								  		'</div>'+
 								  		'<div class="heading-star">'+
 											'<input id="rank-2" data-size="xs" class="input-7-xs"  name="input-7-xs" value="2.5" class="rating-loading" data-role="none">'+
@@ -186,7 +191,7 @@ function ViewCaptionResultPage(){
 										'<div class="form-group cap-fg">'+
 										    '<div class="input-group">'+
 										        '<div class="caption-text">'+
-										        	'<p>Bootstrap ships with vanilla CSS, but its source code utilizes the two most popular CSS preprocessors, Less and Sass. Quickly get started with precompiled CSS or build on the source.</p>'+
+										        	'<p>This is how diabetes starts…</p>'+
 										        '</div>'+
 										    '</div>'+
 										'</div>'+
@@ -200,7 +205,7 @@ function ViewCaptionResultPage(){
 								  '<div class="panel-heading clearfix" style="text-align: left;">'+
 								  	'<div class="heading-wrapper clearfix">'+
 								  		'<div class="heading-name">'+
-								  			'<span id="name-text">Cooper&nbsp;<span class="new-cap rank-cap-3"></span></span>'+
+								  			'<span id="name-text">Kim&nbsp;<span class="new-cap rank-cap-3"></span></span>'+
 								  		'</div>'+
 								  		'<div class="heading-star">'+
 											'<input id="rank-3" data-size="xs" class="input-7-xs"  name="input-7-xs" value="2.5" class="rating-loading" data-role="none">'+
@@ -211,7 +216,7 @@ function ViewCaptionResultPage(){
 										'<div class="form-group cap-fg">'+
 										    '<div class="input-group">'+
 										        '<div class="caption-text">'+
-										        	'<p>Millions of amazing sites across the web are being built with Bootstrap. Get started on your own with our growing collection of examples or by exploring some of our favorites.</p>'+
+										        	'<p>Save some for me, kid!</p>'+
 										        '</div>'+
 										    '</div>'+
 										'</div>'+
@@ -253,17 +258,20 @@ function RetriveFinalRanks(){
 		$('#page-body').fadeIn();
 		setTimeout(function(){ 
 			var ranks_html = 
+				'<div id="card-image-holder">'+
+					'<img src = "'+chosen_one_src+'" class = "card-img img-thumbnail">'+
+				'</div>'+
 				'<div id="rating-wrapper">'+
 					'<div id="captions-holder">'+
 						'<div class="inner-div">'+
-							'<div class="rp panel panel-default caption-panel">'+
+							'<div class="panel panel-default caption-panel">'+
 							  '<div class="panel-heading clearfix" style="text-align: left;">'+
 							  	'<div class="heading-wrapper clearfix">'+
 							  		'<div class="heading-name">'+
-							  			'<span id="name-text">Robert</span>'+
+							  			'<span id="name-text">Helena</span>'+
 							  		'</div>'+
 							  		'<div class="heading-star fadeIn" style="visibility: hidden;">'+
-										'<input data-size="xs" class="f-ranks"  name="input-7-xs" value="2.5" class="rating-loading" data-role="none">'+
+										'<input data-size="xs" class="f-ranks"  name="input-7-xs" value="3.0" class="rating-loading" data-role="none">'+
 							  		'</div>'+
 							  	'</div>'+
 							  '</div>'+
@@ -271,7 +279,7 @@ function RetriveFinalRanks(){
 									'<div class="form-group cap-fg">'+
 									    '<div class="input-group">'+
 									        '<div class="caption-text">'+
-									        	'<p>Bootstrap makes front-end web development faster and easier. Its made for folks of all skill levels, devices of all shapes, and projects of all sizes.</p>'+
+									        	'<p>Who needs forks & knives?</p>'+
 									        '</div>'+
 									    '</div>'+
 									'</div>'+
@@ -281,14 +289,14 @@ function RetriveFinalRanks(){
 					'</div>'+
 					'<div id="captions-holder">'+
 						'<div class="inner-div">'+
-							'<div class="panel panel-default caption-panel">'+
+							'<div class="rp panel panel-default caption-panel">'+
 							  '<div class="panel-heading clearfix" style="text-align: left;">'+
 							  	'<div class="heading-wrapper clearfix">'+
 							  		'<div class="heading-name">'+
-							  			'<span id="name-text">Cooper</span>'+
+							  			'<span id="name-text">Robert</span>'+
 							  		'</div>'+
 							  		'<div class="heading-star fadeIn" style="visibility: hidden;">'+
-										'<input data-size="xs" class="f-ranks"  name="input-7-xs" value="2.5" class="rating-loading" data-role="none">'+
+										'<input data-size="xs" class="f-ranks"  name="input-7-xs" value="5" class="rating-loading" data-role="none">'+
 							  		'</div>'+
 							  	'</div>'+
 							  '</div>'+
@@ -296,7 +304,7 @@ function RetriveFinalRanks(){
 									'<div class="form-group cap-fg">'+
 									    '<div class="input-group">'+
 									        '<div class="caption-text">'+
-									        	'<p>Bootstrap ships with vanilla CSS, but its source code utilizes the two most popular CSS preprocessors, Less and Sass. Quickly get started with precompiled CSS or build on the source.</p>'+
+									        	'<p>This is how diabetes starts…</p>'+
 									        '</div>'+
 									    '</div>'+
 									'</div>'+
@@ -310,10 +318,10 @@ function RetriveFinalRanks(){
 							  '<div class="panel-heading clearfix" style="text-align: left;">'+
 							  	'<div class="heading-wrapper clearfix">'+
 							  		'<div class="heading-name">'+
-							  			'<span id="name-text">Cooper</span>'+
+							  			'<span id="name-text">Kim</span>'+
 							  		'</div>'+
 							  		'<div class="heading-star fadeIn" style="visibility: hidden;">'+
-										'<input data-size="xs" class="f-ranks"  name="input-7-xs" value="2.5" class="rating-loading" data-role="none">'+
+										'<input data-size="xs" class="f-ranks"  name="input-7-xs" value="4.5" class="rating-loading" data-role="none">'+
 							  		'</div>'+
 							  	'</div>'+
 							  '</div>'+
@@ -321,7 +329,7 @@ function RetriveFinalRanks(){
 									'<div class="form-group cap-fg">'+
 									    '<div class="input-group">'+
 									        '<div class="caption-text">'+
-									        	'<p>Millions of amazing sites across the web are being built with Bootstrap. Get started on your own with our growing collection of examples or by exploring some of our favorites.</p>'+
+									        	'<p>Save some for me, kid!</p>'+
 									        '</div>'+
 									    '</div>'+
 									'</div>'+
