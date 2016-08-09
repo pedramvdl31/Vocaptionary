@@ -267,6 +267,31 @@ function RetriveFinalRanks(){
 							  '<div class="panel-heading clearfix" style="text-align: left;">'+
 							  	'<div class="heading-wrapper clearfix">'+
 							  		'<div class="heading-name">'+
+							  			'<span id="name-text">Cooper</span>'+
+							  		'</div>'+
+							  		'<div class="heading-star fadeIn" style="visibility: hidden;">'+
+										'<input data-size="xs" class="f-ranks"  name="input-7-xs" value="4.1" class="rating-loading" data-role="none">'+
+							  		'</div>'+
+							  	'</div>'+
+							  '</div>'+
+							  '<div class="panel-body cap-body">'+
+									'<div class="form-group cap-fg">'+
+									    '<div class="input-group">'+
+									        '<div class="caption-text">'+
+									        	'<p>Little Girl Eating Chocolate Cake</p>'+
+									        '</div>'+
+									    '</div>'+
+									'</div>'+
+							  '</div>'+
+							'</div>'+
+						'</div>'+
+					'</div>'+
+					'<div id="captions-holder">'+
+						'<div class="inner-div">'+
+							'<div class="panel panel-default caption-panel">'+
+							  '<div class="panel-heading clearfix" style="text-align: left;">'+
+							  	'<div class="heading-wrapper clearfix">'+
+							  		'<div class="heading-name">'+
 							  			'<span id="name-text">Helena</span>'+
 							  		'</div>'+
 							  		'<div class="heading-star fadeIn" style="visibility: hidden;">'+
